@@ -1,0 +1,16 @@
+$primary-color: #B34180;
+$text-color: #FFFFFF;
+
+.header {
+  display:flex;
+  flex-direction: row;
+  background-color: red;
+}
+
+li{
+  color:red;
+}
+
+.header__llista{
+  display:flex;
+}
