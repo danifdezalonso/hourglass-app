@@ -3,14 +3,47 @@ $text-color: #FFFFFF;
 
 .header {
   display:flex;
-  flex-direction: row;
-  background-color: red;
+  justify-content: space-around;
+  align-items: center;
+  height: 64px;
+  border-bottom: 1px rgba(236, 239, 241, 0.5) solid;
+
+  &__left{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+
+  &__right{
+        display: flex;
+        align-items: center;
+        justify-content: right;
+  }
+
+  &__logo > img{
+    margin-right: 8px;
+    height: 48px;
+    padding: 16px;
+  }
+  &__navigationBar {
+
+    &__llista{
+      display: flex;
+      margin: 16px;
+      a {
+        text-decoration:none;
+        color: black;
+        padding: 5px;
+        &:hover{
+          margin-bottom: -3px;
+          border-bottom: 3px $primary-color solid;
+        }
+      }
+      li {
+        padding: 16px;
+        list-style-type: none;
+      }
+    }
+  }
 }
 
-li{
-  color:red;
-}
-
-.header__llista{
-  display:flex;
-}

@@ -2,10 +2,13 @@ import React from "react";
 
 const SearchBar = ({ keyword, setKeyword }) => {
   const BarStyling = {
-    width: "20rem",
+    width: "40rem",
     background: "#F2F1F9",
     border: "none",
-    padding: "0.5rem"
+    padding: "0.5rem",
+    height: "32px",
+    borderRadius: "80px",
+    paddingLeft: "2rem",
   };
   return (
     <input
