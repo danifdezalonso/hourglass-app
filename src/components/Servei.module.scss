@@ -1,0 +1,46 @@
+$primary-color: #ffdaee;
+$text-color: black;
+
+.box{
+    border-radius: 1px black solid;
+    max-width: fit-content;
+    background-color:$primary-color;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    margin: 1rem 1rem 1rem 0rem;
+
+    &__title{
+        font-size: 1.5rem;
+        text-decoration: none;
+        font-weight: 600;
+        color: $text-color;
+    }
+
+    &__description {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+        font-size: 1rem;
+        text-decoration: none;
+        max-width: 300px;
+        font-weight: 400;
+        margin-top: 8px;
+        margin: 1rem 1rem 1rem 0rem;
+        color: $text-color;
+    }
+    &__image > img{
+        width: 320px;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+    
+    &__button {
+        margin-top: 0.5rem;
+        margin-left: 0rem;
+        border-radius: 0.5rem;
+        width: 100%;
+    }
+}

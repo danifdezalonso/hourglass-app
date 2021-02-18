@@ -1,0 +1,15 @@
+.filter__header{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.filter__subheader{
+    font-weight: 300;
+    color: #acacac;
+    font-size: 1.25rem;
+}
+
+.filter__itemlist {
+    display: flex;
+    overflow-x: scroll;
+}
