@@ -25,7 +25,7 @@ const Header = () => {
             </a>
           </ul>
         </div>
-        <Button text="Afegeix servei" />
+        <Button text="Afegeix" />
       </div>
     </div>
   );
