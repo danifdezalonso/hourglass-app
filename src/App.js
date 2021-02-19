@@ -11,7 +11,7 @@ export default function App() {
       <Highlights title="Serveis destacats per la llar" />
       <Highlights title="Serveis destacats per estudiar" />
       <Highlights title="Serveis destacats de mecànica" />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
