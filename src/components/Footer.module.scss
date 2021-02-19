@@ -1,12 +1,15 @@
 $primary-color: #B34180;
 $gray-color: rgb(242, 241, 249);
+$grayblue-color: #597D8C;
 $text-color: #FFFFFF;
+
 
 .footer {
     background-color: $gray-color;
-    color: black;
     padding: 3rem;
     margin-top: 2rem;
+    font-size: 14px;
+    color: $grayblue-color;
 
     &__container {
         max-width: 1024px;
@@ -16,8 +19,9 @@ $text-color: #FFFFFF;
     }
 
     &__llistes {
+        width: 100%;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
 
         &__links {
@@ -26,8 +30,12 @@ $text-color: #FFFFFF;
             justify-content: center;
             padding: 3rem;
 
-            &:first-child{
+            &:first-child {
                 padding-left: 0rem;
+            }
+
+            li {
+                padding-bottom: 8px;
             }
 
             &>li>a {
@@ -42,12 +50,18 @@ $text-color: #FFFFFF;
 
 
 @media screen and (max-width: 600px) {
+    .footer__llistes {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
     .footer {
         margin-top: 0.5rem;
         padding: 3rem 2rem;
 
         &__container {
             margin-top: 0rem;
+            max-width: 600px;
         }
     }
 }
