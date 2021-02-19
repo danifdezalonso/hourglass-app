@@ -8,38 +8,38 @@ const Footer = () => {
         <div className={styles.footer__container}>
           <div className={styles.footer__llistes}>
             <ul className={styles.footer__llistes__links}>
-              <li> Logo </li> <li>Copyright © 2021 WallaServices</li>{" "}
-            </ul>{" "}
+              <li> Logo </li> <li>Copyright © 2021 WallaServices</li>
+            </ul>
             <ul className={styles.footer__llistes__links}>
               <li>
                 <b> WallaServices</b>
               </li>
-              <li> Qui som? </li> <li> Premsa </li> <li> Feina </li>{" "}
-              <li> Equip </li>{" "}
-            </ul>{" "}
+              <li> Qui som? </li> <li> Premsa </li> <li> Feina </li>
+              <li> Equip </li>
+            </ul>
             <ul className={styles.footer__llistes__links}>
               <li>
                 <b> Suport </b>
-              </li>{" "}
-              <li> Preguntes Freqüents </li> <li> Normes de publicació </li>{" "}
-              <li> Consells de seguretat </li>{" "}
-            </ul>{" "}
+              </li>
+              <li> Preguntes Freqüents </li> <li> Normes de publicació </li>
+              <li> Consells de seguretat </li>
+            </ul>
             <ul className={styles.footer__llistes__links}>
               <li>
                 <b> Legal </b>
-              </li>{" "}
-              <li> Condicions d'ús </li> <li> Política de privacitat</li>{" "}
-              <li> Cookies</li>{" "}
-            </ul>{" "}
+              </li>
+              <li> Condicions d'ús </li> <li> Política de privacitat</li>
+              <li> Cookies</li>
+            </ul>
             <ul className={styles.footer__llistes__links}>
               <li>
                 <b>Motor </b>
-              </li>{" "}
-              <li> Particulars </li> <li> Professionals </li>{" "}
-            </ul>{" "}
-          </div>{" "}
-        </div>{" "}
-      </div>{" "}
+              </li>
+              <li> Particulars </li> <li> Professionals </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
