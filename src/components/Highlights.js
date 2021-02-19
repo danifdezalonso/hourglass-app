@@ -47,5 +47,3 @@ const Highlights = (props) => {
 };
 
 export default Highlights;
-
-// serveis: professor particular, lampista, electricista, professor llengües, community manager, 

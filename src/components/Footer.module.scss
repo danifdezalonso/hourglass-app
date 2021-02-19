@@ -10,54 +10,58 @@ $text-color: #FFFFFF;
     margin-top: 2rem;
     font-size: 14px;
     color: $grayblue-color;
-    
+
     &__container {
+        max-width: 1024px;
         margin-top: 1rem;
         margin-right: auto;
         margin-left: auto;
-        
-        &__llistes {
-            width: 100%;
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            
-            &__links {
-                list-style-type: none;
-                position: center;
-                justify-content: center;
-                padding: 3rem;
+    }
+
+    &__llistes {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        &__links {
+            list-style-type: none;
+            position: center;
+            justify-content: center;
+            padding: 3rem;
+
+            &:first-child {
+                padding-left: 0rem;
+            }
+
+            li {
+                padding-bottom: 8px;
+            }
+
+            &>li>a {
+                text-decoration: none;
+                color: white;
+                margin: 2rem;
+                font-size: 1.2rem;
             }
         }
     }
 }
-// &:first-child {
-    //     padding-left: 0rem;
-    // }
-    
-    li {
-        padding-bottom: 8px;
+
+
+@media screen and (max-width: 600px) {
+    .footer__llistes {
+        display: flex;
+        flex-wrap: nowrap;
     }
-    
-    &>li>a {
-        text-decoration: none;
-        color: white;
-        margin: 2rem;
-        font-size: 1.2rem;
-    }
-    
-    @media screen and (max-width: 600px) {
-        .footer__llistes {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .footer {
-            margin-top: 0.5rem;
-            padding: 3rem 2rem;
-            
-            &__container {
-                margin-top: 0rem;
-                
-            }
+
+    .footer {
+        margin-top: 0.5rem;
+        padding: 3rem 2rem;
+
+        &__container {
+            margin-top: 0rem;
+            max-width: 600px;
         }
     }
+}
