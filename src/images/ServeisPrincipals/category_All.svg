@@ -1,1 +1,10 @@
-<?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M10 26h28v-4H10v4zm-4 8h28v-4H6v4zm8-20v4h28v-4H14z"/><path d="M0 0h48v48H0z" fill="none"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>category_All</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="category_All">
+            <path d="M10,26 L38,26 L38,22 L10,22 L10,26 Z M6,34 L34,34 L34,30 L6,30 L6,34 Z M14,14 L14,18 L42,18 L42,14 L14,14 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+            <polygon id="Path" points="0 0 48 0 48 48 0 48"></polygon>
+        </g>
+    </g>
+</svg>

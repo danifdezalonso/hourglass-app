@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>plus_icon</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="plus_icon" fill="#B34180" fill-rule="nonzero">
+            <path d="M24,0 C10.7464286,0 0,10.7464286 0,24 C0,37.2535714 10.7464286,48 24,48 C37.2535714,48 48,37.2535714 48,24 C48,10.7464286 37.2535714,0 24,0 Z M32,25.4375 L25.4375,25.4375 L25.4375,32 L23.5625,32 L23.5625,25.4375 L17,25.4375 L17,23.5625 L23.5625,23.5625 L23.5625,17 L25.4375,17 L25.4375,23.5625 L32,23.5625 L32,25.4375 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

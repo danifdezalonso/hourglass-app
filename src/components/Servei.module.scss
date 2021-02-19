@@ -32,9 +32,9 @@ $text-color: black;
         color: $text-color;
     }
     &__image > img{
-        width: 320px;
+        width: 240px;
         object-fit: cover;
-        border-radius: 0.5rem;
+        border-radius: 0.25rem;
     }
     
     &__button {

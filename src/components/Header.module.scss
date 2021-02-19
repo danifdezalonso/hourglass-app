@@ -1,6 +1,9 @@
 $primary-color: #B34180;
 $text-color: #FFFFFF;
 
+.container__mobile{
+  display: none;
+}
 .container__fluid{
   border-bottom: 1px rgba(236, 239, 241, 0.5) solid;
 
@@ -56,3 +59,37 @@ $text-color: #FFFFFF;
 }
 }
 
+@media screen and (max-width: 600px) {
+  .header{
+    display: none!important;
+  }
+  .container__mobile {
+    display: initial;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 20;
+
+    .mobile__tabbar{
+      display: flex;
+      padding-bottom: 24px;
+      align-items: center;
+      justify-content: space-around;
+      min-height: 64px;
+      border-top: 1px solid #eceff1;
+
+      &__option{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &__option__title{
+        margin-top: 8px;
+      }
+    }
+  }
+
+}
