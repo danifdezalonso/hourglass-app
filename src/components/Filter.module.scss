@@ -1,15 +1,21 @@
 .filter__header{
+    text-align: center;
+    margin-top: 32px;
     font-weight: 600;
     font-size: 2rem;
 }
 
 .filter__subheader{
+    text-align: center;
+    margin-top: 8px;
     font-weight: 300;
     color: #acacac;
     font-size: 1.25rem;
 }
 
 .filter__itemlist {
+    margin-top: 8px;
+    padding: 8px;
     display: flex;
-    overflow-x: scroll;
+    overflow-x: scroll
 }

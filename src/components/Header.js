@@ -7,25 +7,27 @@ import logo from "../images/Logo/LogoFP.png";
 
 const Header = () => {
   return (
-    <div className={styles.header}>
-      <div className={styles.header__left}>
-        <div className={styles.header__logo}>
-          <img src={logo} alt="Logo"></img>
+    <div className={styles.container__fluid}>
+      <div className={styles.header}>
+        <div className={styles.header__left}>
+          <div className={styles.header__logo}>
+            <img src={logo} alt="Logo"></img>
+          </div>
+          <SearchPage className={styles.header__searchBar} />
         </div>
-        <SearchPage className={styles.header__searchBar} />
-      </div>
-      <div className={styles.header__right}>
-        <div className={styles.header__navigationBar}>
-          <ul className={styles.header__navigationBar__llista}>
-            <a href="#">
-              <li>Missatges</li>
-            </a>
-            <a href="#">
-              <li>Perfil</li>
-            </a>
-          </ul>
+        <div className={styles.header__right}>
+          <div className={styles.header__navigationBar}>
+            <ul className={styles.header__navigationBar__llista}>
+              <a href="#">
+                <li>Missatges</li>
+              </a>
+              <a href="#">
+                <li>Perfil</li>
+              </a>
+            </ul>
+          </div>
+          <Button text="Afegeix" />
         </div>
-        <Button text="Afegeix" />
       </div>
     </div>
   );

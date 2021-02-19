@@ -1,17 +1,19 @@
 $primary-color: #B34180;
 $text-color: #FFFFFF;
 
-.header {
+.container__fluid{
+  border-bottom: 1px rgba(236, 239, 241, 0.5) solid;
+
+  .header {
   max-width: 1024px;
-      padding-right: 16px;
-      padding-left: 16px;
-          margin-right: auto;
-          margin-left: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-right: auto;
+  margin-left: auto;
   display:flex;
   justify-content: space-around;
   align-items: center;
   height: 64px;
-  border-bottom: 1px rgba(236, 239, 241, 0.5) solid;
 
   &__left{
     display: flex;
@@ -51,5 +53,6 @@ $text-color: #FFFFFF;
       }
     }
   }
+}
 }
 
