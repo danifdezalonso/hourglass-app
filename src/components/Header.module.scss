@@ -63,6 +63,10 @@ $text-color: #FFFFFF;
   .header{
     display: none!important;
   }
+  .mobile__searchbar{
+      position: absolute;
+      top:0px;
+    }
   .container__mobile {
     display: initial;
     position: fixed;
@@ -71,6 +75,7 @@ $text-color: #FFFFFF;
     background-color: #fff;
     z-index: 20;
 
+    
     .mobile__tabbar{
       display: flex;
       padding-bottom: 24px;
