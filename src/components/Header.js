@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
+import { NavLink, Link } from "react-router-dom";
 import Button from "./Buttons/ButtonNavBar"; // Component Botó
 import SearchPage from "./SearchPage"; // Component de Cerca
 import styles from "./Header.module.scss"; // CSS especific del component
@@ -29,15 +28,34 @@ const Header = () => {
           <div className={styles.header__right}>
             <div className={styles.header__navigationBar}>
               <ul className={styles.header__navigationBar__llista}>
-                <Link to="/chat">
+                <NavLink
+                  to="/chat"
+                  className={styles.header__navigation__llista__item}
+                  activeClassName={styles.active__page}
+                >
                   <li>Missatges</li>
-                </Link>
-                <Link to="/profile">
+                </NavLink>
+                <NavLink
+                  to="/profile"
+                  className={styles.header__navigation__llista__item}
+                  activeClassName={styles.active__page}
+                >
                   <li>Perfil</li>
-                </Link>
-                <Link to="/favs">
+                </NavLink>
+                <NavLink
+                  to="/favs"
+                  className={styles.header__navigation__llista__item}
+                  activeClassName={styles.active__page}
+                >
                   <li>Favorits</li>
-                </Link>
+                </NavLink>
+                <NavLink
+                  to="/login"
+                  className={styles.header__navigation__llista__item}
+                  activeClassName={styles.active__page}
+                >
+                  <li>Accedir</li>
+                </NavLink>
               </ul>
             </div>
             <Link to="/add">
@@ -49,7 +67,9 @@ const Header = () => {
       {/* MOBILE */}
 
       <div className={styles.container__searchBar}>
-        <img src={logo} alt="Logo"></img>
+        <Link to="/">
+          <img src={logo} alt="Logo"></img>
+        </Link>
         <SearchPage className={styles.mobile__searchBar} />
       </div>
 
@@ -58,7 +78,7 @@ const Header = () => {
           <div className={styles.mobile__tabbar__option}>
             <Link to="/">
               <img src={IconHome} alt="Logo inici"></img>
-              <p className={styles.mobile__tabbar__option__title}>Inici</p>
+              <div className={styles.mobile__tabbar__option__title}>Inici</div>
             </Link>
           </div>
           <Link to="/favs">
