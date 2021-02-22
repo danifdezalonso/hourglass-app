@@ -7,7 +7,6 @@ import Filter from "../components/Filter";
 const Home = () => {
   return (
     <>
-      <Header />
       <Filter />
       <Highlights title="Serveis destacats per la llar" />
       <Highlights title="Serveis destacats per estudiar" />
