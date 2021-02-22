@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import Button from "./Buttons/ButtonNavBar"; // Component Botó
 import SearchPage from "./SearchPage"; // Component de Cerca
 import styles from "./Header.module.scss"; // CSS especific del component
@@ -18,22 +20,29 @@ const Header = () => {
         <div className={styles.header}>
           <div className={styles.header__left}>
             <div className={styles.header__logo}>
-              <img src={logo} alt="Logo"></img>
+              <Link to="/">
+                <img src={logo} alt="Logo"></img>
+              </Link>
             </div>
             <SearchPage className={styles.header__searchBar} />
           </div>
           <div className={styles.header__right}>
             <div className={styles.header__navigationBar}>
               <ul className={styles.header__navigationBar__llista}>
-                <a href="#">
+                <Link to="/chat">
                   <li>Missatges</li>
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="/profile">
                   <li>Perfil</li>
-                </a>
+                </Link>
+                <Link to="/favs">
+                  <li>Favorits</li>
+                </Link>
               </ul>
             </div>
-            <Button text="Afegeix" />
+            <Link to="/add">
+              <Button text="Afegeix" />
+            </Link>
           </div>
         </div>
       </div>
@@ -47,25 +56,35 @@ const Header = () => {
       <div className={styles.container__mobile}>
         <div className={styles.mobile__tabbar}>
           <div className={styles.mobile__tabbar__option}>
-            <img src={IconHome} alt="Logo 1"></img>
-            <p className={styles.mobile__tabbar__option__title}>Inici</p>
+            <Link to="/">
+              <img src={IconHome} alt="Logo inici"></img>
+              <p className={styles.mobile__tabbar__option__title}>Inici</p>
+            </Link>
           </div>
-          <div className={styles.mobile__tabbar__option}>
-            <img src={IconFavs} alt="Logo 1"></img>
-            <p className={styles.mobile__tabbar__option__title}>Favorits</p>
-          </div>
-          <div className={styles.mobile__tabbar__option}>
-            <img src={IconPlus} alt="Logo 1"></img>
-            <p className={styles.mobile__tabbar__option__title}>Afegir</p>
-          </div>
-          <div className={styles.mobile__tabbar__option}>
-            <img src={IconChat} alt="Logo 1"></img>
-            <p className={styles.mobile__tabbar__option__title}>Missatges</p>
-          </div>
-          <div className={styles.mobile__tabbar__option}>
-            <img src={IconProfile} alt="Logo 1"></img>
-            <p className={styles.mobile__tabbar__option__title}>Perfil</p>
-          </div>
+          <Link to="/favs">
+            <div className={styles.mobile__tabbar__option}>
+              <img src={IconFavs} alt="Logo favs"></img>
+              <p className={styles.mobile__tabbar__option__title}>Favorits</p>
+            </div>
+          </Link>
+          <Link to="/add">
+            <div className={styles.mobile__tabbar__option}>
+              <img src={IconPlus} alt="Logo afegir"></img>
+              <p className={styles.mobile__tabbar__option__title}>Afegir</p>
+            </div>
+          </Link>
+          <Link to="/chat">
+            <div className={styles.mobile__tabbar__option}>
+              <img src={IconChat} alt="Logo missatges"></img>
+              <p className={styles.mobile__tabbar__option__title}>Missatges</p>
+            </div>
+          </Link>
+          <Link to="/profile">
+            <div className={styles.mobile__tabbar__option}>
+              <img src={IconProfile} alt="Logo perfil"></img>
+              <p className={styles.mobile__tabbar__option__title}>Perfil</p>
+            </div>
+          </Link>
         </div>
       </div>
     </>
