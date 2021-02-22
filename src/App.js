@@ -17,7 +17,7 @@ export default function App() {
       <div className="App">
         <Header />
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route path="/" component={Home} exact={true} />
           <Route exact path="/chat" component={Chat} />
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/favs" component={Favs} />

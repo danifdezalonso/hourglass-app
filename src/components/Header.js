@@ -19,7 +19,7 @@ const Header = () => {
         <div className={styles.header}>
           <div className={styles.header__left}>
             <div className={styles.header__logo}>
-              <Link to="/">
+              <Link to="/" exact>
                 <img src={logo} alt="Logo"></img>
               </Link>
             </div>
@@ -67,7 +67,7 @@ const Header = () => {
       {/* MOBILE */}
 
       <div className={styles.container__searchBar}>
-        <Link to="/">
+        <Link to="/" onlyActiveOnIndex>
           <img src={logo} alt="Logo"></img>
         </Link>
         <SearchPage className={styles.mobile__searchBar} />
@@ -76,35 +76,48 @@ const Header = () => {
       <div className={styles.container__mobile}>
         <div className={styles.mobile__tabbar}>
           <div className={styles.mobile__tabbar__option}>
-            <Link to="/">
+            <NavLink
+              className={styles.mobile__tabbar__option}
+              activeClassName={styles.active__page__mobile}
+              to="/"
+              exact
+            >
               <img src={IconHome} alt="Logo inici"></img>
               <div className={styles.mobile__tabbar__option__title}>Inici</div>
-            </Link>
+            </NavLink>
           </div>
-          <Link to="/favs">
-            <div className={styles.mobile__tabbar__option}>
-              <img src={IconFavs} alt="Logo favs"></img>
-              <p className={styles.mobile__tabbar__option__title}>Favorits</p>
-            </div>
-          </Link>
-          <Link to="/add">
-            <div className={styles.mobile__tabbar__option}>
-              <img src={IconPlus} alt="Logo afegir"></img>
-              <p className={styles.mobile__tabbar__option__title}>Afegir</p>
-            </div>
-          </Link>
-          <Link to="/chat">
-            <div className={styles.mobile__tabbar__option}>
-              <img src={IconChat} alt="Logo missatges"></img>
-              <p className={styles.mobile__tabbar__option__title}>Missatges</p>
-            </div>
-          </Link>
-          <Link to="/profile">
-            <div className={styles.mobile__tabbar__option}>
-              <img src={IconProfile} alt="Logo perfil"></img>
-              <p className={styles.mobile__tabbar__option__title}>Perfil</p>
-            </div>
-          </Link>
+          <NavLink
+            className={styles.mobile__tabbar__option}
+            activeClassName={styles.active__page__mobile}
+            to="/favs"
+          >
+            <img src={IconFavs} alt="Logo favs"></img>
+            <p className={styles.mobile__tabbar__option__title}>Favorits</p>
+          </NavLink>
+          <NavLink
+            className={styles.mobile__tabbar__option}
+            activeClassName={styles.active__page__mobile}
+            to="/add"
+          >
+            <img src={IconPlus} alt="Logo afegir"></img>
+            <p className={styles.mobile__tabbar__option__title}>Afegir</p>
+          </NavLink>
+          <NavLink
+            className={styles.mobile__tabbar__option}
+            activeClassName={styles.active__page__mobile}
+            to="/chat"
+          >
+            <img src={IconChat} alt="Logo missatges"></img>
+            <p className={styles.mobile__tabbar__option__title}>Missatges</p>
+          </NavLink>
+          <NavLink
+            className={styles.mobile__tabbar__option}
+            activeClassName={styles.active__page__mobile}
+            to="/profile"
+          >
+            <img src={IconProfile} alt="Logo perfil"></img>
+            <p className={styles.mobile__tabbar__option__title}>Perfil</p>
+          </NavLink>
         </div>
       </div>
     </>

@@ -36,7 +36,7 @@
       justify-content: right;
     }
 
-    &__logo>a>img {
+    &__logo > a > img {
       margin-right: 8px;
       height: 42px;
       padding: 16px;
@@ -74,8 +74,10 @@
   display: none;
 }
 
-
 @media screen and (max-width: 600px) {
+  .active__page__mobile {
+    border-bottom: 2px solid $primary-color;
+  }
   .container__searchBar {
     display: flex;
     justify-content: space-around;
@@ -84,7 +86,6 @@
     padding: 0.5rem;
     margin-top: 6px;
     border-bottom: 1px rgba(236, 239, 241, 0.5) solid;
-
 
     img {
       height: 36px;
@@ -128,5 +129,4 @@
       }
     }
   }
-
 }
