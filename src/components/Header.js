@@ -38,15 +38,16 @@ const Header = () => {
         </div>
       </div>
       {/* MOBILE */}
-      
-      <div className= {styles.container__searchBar}>
-      <SearchPage className={styles.mobile__searchBar} />
+
+      <div className={styles.container__searchBar}>
+        <img src={logo} alt="Logo"></img>
+        <SearchPage className={styles.mobile__searchBar} />
       </div>
 
       <div className={styles.container__mobile}>
         <div className={styles.mobile__tabbar}>
           <div className={styles.mobile__tabbar__option}>
-            <img src={logo} alt="Logo 1"></img>
+            <img src={IconHome} alt="Logo 1"></img>
             <p className={styles.mobile__tabbar__option__title}>Inici</p>
           </div>
           <div className={styles.mobile__tabbar__option}>
