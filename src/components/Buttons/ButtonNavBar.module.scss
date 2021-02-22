@@ -1,6 +1,4 @@
-$primary-color: #B34180;
-$primary-color-hover: #a2035b;
-$text-color: #FFFFFF;
+@import "../app.module.scss";
 
 button {
   display: flex;
@@ -18,7 +16,6 @@ button {
   border: none;
   cursor: pointer;
   transition: all .2s ease-in-out;
-
   &:hover{
     background-color: $primary-color-hover;
   }
