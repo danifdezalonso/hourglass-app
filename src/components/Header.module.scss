@@ -33,7 +33,7 @@ $text-color: #FFFFFF;
 
   &__logo > img{
     margin-right: 8px;
-    height: 48px;
+    height: 44px;
     padding: 16px;
   }
   &__navigationBar {
@@ -65,11 +65,19 @@ $text-color: #FFFFFF;
 
 @media screen and (max-width: 600px) {
   .container__searchBar{
-    display:block;
+    display:flex;
+    justify-content:space-around;
     margin:auto;
     text-align:center;
-    padding:0;
+    padding:0.5rem;
     margin-top:6px;
+    border-bottom: 1px rgba(236, 239, 241, 0.5) solid;
+
+
+    img {
+      height: 36px;
+      width: 36px;
+    }
   }
   .header{
     display: none!important;
@@ -85,11 +93,12 @@ $text-color: #FFFFFF;
     .mobile__tabbar{
       display: flex;
       padding-bottom: 24px;
-      padding-top: 6px;
+      padding-top: 8px;
       align-items: center;
       justify-content: space-around;
       min-height: 64px;
       border-top: 1px solid #eceff1;
+      box-shadow: -1px 3px 9px 3px #4a48485c;
 
       &__option{
         position: relative;
