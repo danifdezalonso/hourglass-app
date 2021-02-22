@@ -3,11 +3,11 @@ $text-color: black;
 
 .box{
     border-radius: 1px black solid;
-    max-width: fit-content;
+    max-width: fit-content;//no està fent res
     background-color:$primary-color;
     border-radius: 0.75rem;
     padding: 1rem;
-    margin: 1rem 1rem 1rem 0rem;
+    margin: 1rem 0.5rem 1rem 0.5rem;
 
     &__title{
         font-size: 1.5rem;
@@ -43,4 +43,27 @@ $text-color: black;
         border-radius: 0.5rem;
         width: 100%;
     }
+}
+
+@media screen and (max-width: 600px) {
+    .box{
+        padding: 0.6rem;
+        margin: 0.4rem;
+    
+        &__title{
+            font-size: 16px; 
+        }
+    
+        &__description {
+            font-size: 13px; //footer
+            margin: 0.6rem 0rem 0.6rem 0rem;
+        }
+        &__image > img{
+            width: 130px;
+            height:90px;
+        }
+        &__button {
+            display:none;
+        }
+    }    
 }

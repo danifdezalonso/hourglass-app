@@ -17,7 +17,7 @@ const Filter = () => {
     <div className={generalStyles.container}>
       <h1 className={styles.filter__header}>Quins serveis estàs buscant?</h1>
       <h4 className={styles.filter__subheader}>
-        Els teus veïns estan disposats a ayudar-te, tu també vols participar?
+        Els teus veïns estan disposats a ajudar-te, tu també hi vols participar?
         Uneix-t'hi.
       </h4>
       <div className={styles.filter__itemlist}>

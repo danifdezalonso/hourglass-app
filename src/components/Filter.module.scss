@@ -2,7 +2,7 @@
     text-align: center;
     margin-top: 32px;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .filter__subheader{
@@ -10,12 +10,32 @@
     margin-top: 8px;
     font-weight: 300;
     color: #acacac;
-    font-size: 1.25rem;
+    font-size: 1.05rem;
 }
 
 .filter__itemlist {
-    margin-top: 8px;
     padding: 8px;
     display: flex;
-    overflow-x: scroll
+    overflow-x: scroll;
+    text-align:Center;
+    margin:auto;
+    max-width: 1345px;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 600px) {
+    .filter__header{
+        margin-right: 8px;
+        margin-left: 8px;
+        font-size: 20px;
+    }
+    .filter__subheader{
+        margin-right: 8px;
+        margin-left: 8px;
+        font-size: 14px; 
+    }
+    .filter__itemlist {
+        margin-top: 8px;
+        padding: 16px;
+    }
 }

@@ -6,8 +6,8 @@ $text-color: #FFFFFF;
 
 .footer {
     background-color: $gray-color;
-    padding: 4%;
-    margin-top: 5%;
+    padding: 2% 4%;
+    margin-top: 16px;
     font-size: 14px;
     color: $grayblue-color;
 
@@ -31,13 +31,16 @@ $text-color: #FFFFFF;
 
             li {
                 padding-bottom: 8%;
+
+                img{
+                    width:42px;
+                }
             }
 
             &>li>a {
                 text-decoration: none;
                 color: white;
                 margin: 2rem;
-                font-size: 1.2rem;
             }
         }
     }
@@ -49,33 +52,35 @@ $text-color: #FFFFFF;
         display: flex;
         flex-wrap: wrap;
     }
-
     .footer {
-        margin-top: 0.5rem;
-        padding: 3rem 2rem;
+        margin-top: 8px;
+        padding: 2rem 1rem;
+        font-size: 12px;
 
         &__container {
             margin-top: 0rem;
-            margin-bottom: 4em;
+            margin-bottom: 4.7em;
         }
         &__llistes {
-            justify-content: space-between;
     
             &__links {
                 list-style-type: none;
                 position: center;
                 justify-content: center;
-                padding: 1.5rem;
-    
-                &:first-child {
-                    // min-width:350px;
-                }
+                padding: 1rem 2rem;
     
                 li {
                     padding-bottom: 5px;
+
+                    img{
+                        width:28px;
+                    }
                 }
-    
             }
+            &>li>a {
+                margin: 1rem;
+            }
+    
+        }
         }
     }
-}

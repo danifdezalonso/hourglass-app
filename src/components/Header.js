@@ -3,7 +3,7 @@ import Button from "./Buttons/ButtonNavBar"; // Component Botó
 import SearchPage from "./SearchPage"; // Component de Cerca
 import styles from "./Header.module.scss"; // CSS especific del component
 import "./App.module.scss"; // Reset i CSS general
-import logo from "../images/Logo/LogoFP.png";
+import logo from "../images/Logo/Logo.svg";
 import IconPlus from "../images/Icon/plus_icon.svg";
 import IconChat from "../images/Icon/plus_chat.svg";
 import IconProfile from "../images/Icon/plus_profile.svg";
@@ -38,10 +38,15 @@ const Header = () => {
         </div>
       </div>
       {/* MOBILE */}
+      
+      <div className= {styles.container__searchBar}>
+      <SearchPage className={styles.mobile__searchBar} />
+      </div>
+
       <div className={styles.container__mobile}>
         <div className={styles.mobile__tabbar}>
           <div className={styles.mobile__tabbar__option}>
-            <img src={IconHome} alt="Logo 1"></img>
+            <img src={logo} alt="Logo 1"></img>
             <p className={styles.mobile__tabbar__option__title}>Inici</p>
           </div>
           <div className={styles.mobile__tabbar__option}>

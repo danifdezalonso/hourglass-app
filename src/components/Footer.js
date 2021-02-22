@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.scss"; // CSS especific del componentCSS general
+import logo from "../images/Logo/Logo.svg";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
         <div className={styles.footer__container}>
           <div className={styles.footer__llistes}>
             <ul className={styles.footer__llistes__links}>
-              <li> Logo </li> <li>Copyright © 2021 WallaServices</li>
+              <li> <img src={logo} alt="Logo"></img> </li> <li>Copyright © 2021 WallaServices</li>
             </ul>
             <ul className={styles.footer__llistes__links}>
               <li>

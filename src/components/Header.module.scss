@@ -58,15 +58,22 @@ $text-color: #FFFFFF;
   }
 }
 }
+.container__searchBar{
+  display:none;
+}
+
 
 @media screen and (max-width: 600px) {
+  .container__searchBar{
+    display:block;
+    margin:auto;
+    text-align:center;
+    padding:0;
+    margin-top:6px;
+  }
   .header{
     display: none!important;
   }
-  .mobile__searchbar{
-      position: absolute;
-      top:0px;
-    }
   .container__mobile {
     display: initial;
     position: fixed;
@@ -74,11 +81,11 @@ $text-color: #FFFFFF;
     width: 100%;
     background-color: #fff;
     z-index: 20;
-
     
     .mobile__tabbar{
       display: flex;
       padding-bottom: 24px;
+      padding-top: 6px;
       align-items: center;
       justify-content: space-around;
       min-height: 64px;

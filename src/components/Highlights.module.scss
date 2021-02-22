@@ -1,7 +1,6 @@
 .containerFluid{
-    width: 100%;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    width:100%;
+    padding: 16px 0px;
     background-color: rgb(242, 241, 249);
 }
 .filter__header {
@@ -14,8 +13,26 @@
     color: #acacac;
     font-size: 1.25rem;
 }
+h2{
+    margin:auto;
+    text-align:center;
+}
 
 .filter__itemlist {
     display: flex;
     overflow-x: scroll;
+    max-width: 1150px;
+    margin:auto;
+}
+
+@media screen and (max-width: 600px) {
+    .containerFluid{
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    h2{
+        font-size: 18px; 
+        padding-bottom:6px;
+    }
+    
 }
