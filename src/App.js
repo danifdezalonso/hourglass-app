@@ -6,21 +6,22 @@ import Profile from "./pages/Profile.js";
 import Footer from "./components/Footer";
 import Favs from "./pages/Favs.js";
 import AddItem from "./pages/AddItem.js";
+import Page404 from "./pages/Page404.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function App() {
   return (
     <Router>
       <div className="App">
-        {/* <Switch> */}
         <Header />
-        <Route exact path="/" component={Home} />
-        <Route path="/chat" component={Chat} />
-        <Route path="/profile" component={Profile} />
-        <Route path="/favs" component={Favs} />
-        <Route path="/add" component={AddItem} />
-
-        {/* </Switch> */}
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/chat" component={Chat} />
+          <Route exact path="/profile" component={Profile} />
+          <Route exact path="/favs" component={Favs} />
+          <Route exact path="/add" component={AddItem} />
+          <Route component={Page404} />
+        </Switch>
         <Footer />
       </div>
     </Router>
