@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import fire from "../fire.js";
 import Login from "../components/Login.js";
 import Profile from "../pages/Profile.js";
-import Favs from "./Favs.js";
 
 const SignUpLogin = () => {
   const [user, setUser] = useState("");
@@ -83,19 +82,23 @@ const SignUpLogin = () => {
       {user ? (
         <Profile handleLogout={handleLogout} />
       ) : (
-        <Login
-          user={user}
-          email={email}
-          setEmail={setEmail}
-          password={password}
-          setPassword={setPassword}
-          handleLogin={handleLogin}
-          handleSignup={handleSignup}
-          hasAccount={hasAccount}
-          setHasHaccount={setHasHaccount}
-          emailError={emailError}
-          passwordError={passwordError}
-        />
+        <>
+          <h1>Benvinguda</h1>
+          <h4>Accedeix</h4>
+          <Login
+            user={user}
+            email={email}
+            setEmail={setEmail}
+            password={password}
+            setPassword={setPassword}
+            handleLogin={handleLogin}
+            handleSignup={handleSignup}
+            hasAccount={hasAccount}
+            setHasHaccount={setHasHaccount}
+            emailError={emailError}
+            passwordError={passwordError}
+          />
+        </>
       )}
     </>
   );
