@@ -1,5 +1,4 @@
 import React from "react";
-import Profile from "../pages/Profile.js";
 
 const Login = (props) => {
   const {
@@ -39,7 +38,7 @@ const Login = (props) => {
           <>
             <button onClick={handleLogin}>Sign in</button>
             <p>
-              Don't have an account?{" "}
+              Don't have an account?
               <span onClick={() => setHasHaccount(!hasAccount)}>Sign up</span>
             </p>
           </>
@@ -47,7 +46,7 @@ const Login = (props) => {
           <>
             <button onClick={handleSignup}>Sign up</button>
             <p>
-              Have an account?{" "}
+              Have an account?
               <span onClick={() => setHasHaccount(!hasAccount)}>Sign in</span>
             </p>
           </>
