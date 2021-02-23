@@ -1,9 +1,15 @@
 import React from "react";
 import styles from "./Servei.module.scss";
 import love from "../images/Icon/love.svg";
+import { NavLink } from "react-router-dom";
 
 const Servei = (props) => {
   return (
+    <NavLink
+        to="/ServiceDetail"
+        className={styles.Servei__navigation}
+        activeClassName={styles.active__page}
+      >
     <div className={styles.box}>
       <div className={styles.box__icon}> 
         <img className={styles.box__icon__icon} src={love} alt="fav"></img>
@@ -15,6 +21,7 @@ const Servei = (props) => {
       </div>
       <button className={styles.box__button}>Seleccionar</button>
     </div>
+    </NavLink>
   );
 };
 

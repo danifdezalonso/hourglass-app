@@ -1,0 +1,139 @@
+@import "../components/App.module.scss";
+
+.box{
+    border-radius: 1px $text-color-black solid;
+    background-color:$background-color;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    width: 700px;
+
+    &__userImage > img{
+        width:80px;
+    }
+
+    &__userProfile{
+        display:flex;
+        flex-direction:column;
+        
+        &__name{
+            font-size:24px; 
+
+        }
+        &__about{
+            font-size:16px; 
+            font-weight:200;
+        }
+    }
+
+    &__containerFlex{
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+
+        &__iconStar{
+            width:130px;
+
+            &__star{
+                width:20px;
+                float:right;
+                margin:0 3px;
+            }
+        }
+
+        &__numValoracions{
+            width:115px;
+            display:flex;
+            margin: 6px 0;
+            justify-content: center;
+            
+        }
+    }
+
+    &__container{
+
+        &__fav{
+                width:40px;
+        }
+    }
+    
+
+    &__title{
+        font-size: 24px;
+        text-decoration: none;
+        font-weight: 600;
+        color: $text-color-black;
+    }
+
+    &__description {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+        font-size: 1rem;
+        text-decoration: none;
+        font-weight: 400;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        color: $text-color-black;
+    }
+
+    &__image > img{
+        width: 700px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 0.25rem;
+    }
+
+    &__localitzacio{
+        display:flex;
+        flex-direction:row;
+        font-size:18px;
+        justify-content:center;
+        margin:24px 0;
+
+        &__icon{
+            width:40px;
+        }
+        &__barri{
+            margin-top:auto;
+            margin-bottom:auto;
+        }
+        &__ciutat{
+            margin-top:auto;
+            margin-bottom:auto;
+        }
+    }
+    
+    &__button {
+        margin-top: 0.5rem;
+        margin-left: 0rem;
+        border-radius: 0.5rem;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .box{
+        padding: 0.6rem;
+        margin: 0.4rem;
+    
+        &__title{
+            font-size: 16px; 
+        }
+    
+        &__description {
+            font-size: 13px; //footer
+            margin: 0.6rem 0rem 0.6rem 0rem;
+        }
+        &__image > img{
+            width: 130px;
+            height:90px;
+        }
+        &__button {
+            display:none;
+        }
+    }    
+}

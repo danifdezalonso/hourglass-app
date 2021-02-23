@@ -6,7 +6,7 @@ import styles from "./Favs.module.scss";
 const Favs = () => {
   return (
     <>
-      <h1>Els meus preferits</h1>
+      <h1>Els meus favorits</h1>
       <div className={styles.container__flex}>
       <Servei
         title="Professor particular"

@@ -10,6 +10,7 @@ import Favs from "./pages/Favs.js";
 import AddItem from "./pages/AddItem.js";
 import Page404 from "./pages/Page404.js";
 import Login from "./pages/Login.js";
+import Servei from "./pages/ServiceDetail.js";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
           <Route exact path="/favs" component={Favs} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/add" component={AddItem} />
+          <Route exact path="/ServiceDetail" component={Servei} />
 
           <Route component={Page404} />
         </Switch>

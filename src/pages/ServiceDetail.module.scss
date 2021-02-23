@@ -1,0 +1,11 @@
+@import "../components/App.module.scss";
+
+.containerFlex{
+    display:flex;
+    justify-content:center;
+    margin: 16px auto auto auto;
+    max-width: 1150px;
+}
+.userImage{
+    width:40px;
+}
