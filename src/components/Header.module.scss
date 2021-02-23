@@ -5,7 +5,7 @@
 }
 
 .container__fluid {
-  border-bottom: 1px rgba(236, 239, 241, 0.5) solid;
+  border-bottom: 1px $gray-color-light solid;
 
   .active__page {
     border-bottom: 3px $primary-color solid;
@@ -49,7 +49,7 @@
 
         a {
           text-decoration: none;
-          color: black;
+          color: $text-color-black;
           padding: 5px;
         }
 
@@ -85,7 +85,7 @@
     text-align: center;
     padding: 0.5rem;
     margin-top: 6px;
-    border-bottom: 1px rgba(236, 239, 241, 0.5) solid;
+    border-bottom: 1px $gray-color-light solid;
 
     img {
       height: 36px;
@@ -102,7 +102,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: $white-color;
     z-index: 20;
 
     .mobile__tabbar {
@@ -112,8 +112,8 @@
       align-items: center;
       justify-content: space-around;
       min-height: 64px;
-      border-top: 1px solid #eceff1;
-      box-shadow: -1px 3px 9px 3px #4a48485c;
+      border-top: 1px solid $gray-color-light ;
+      box-shadow: -1px 3px 9px 3px $box-shadow;
 
       &__option {
         position: relative;
@@ -124,7 +124,7 @@
 
       &__option__title {
         margin-top: 8px;
-        color: black;
+        color: $text-color-black;
         text-decoration: none;
       }
     }

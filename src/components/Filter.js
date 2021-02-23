@@ -15,7 +15,7 @@ import IconLlar from "../images/ServeisPrincipals/category_llar.svg";
 const Filter = () => {
   return (
     <div className={generalStyles.container}>
-      <h1 className={styles.filter__header}>Quins serveis estàs buscant?</h1>
+      <h1 className={generalStyles.filter__header}>Quins serveis estàs buscant?</h1>
       <h4 className={styles.filter__subheader}>
         Els teus veïns estan disposats a ajudar-te, tu també hi vols participar?
         Uneix-t'hi.

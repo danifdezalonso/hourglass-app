@@ -1,15 +1,10 @@
-.filter__header{
-    text-align: center;
-    margin-top: 32px;
-    font-weight: 600;
-    font-size: 1.6rem;
-}
+@import "./App.module.scss";
 
 .filter__subheader{
     text-align: center;
     margin-top: 8px;
     font-weight: 300;
-    color: #acacac;
+    color: $gray-color-dark;
     font-size: 1.05rem;
 }
 
@@ -24,11 +19,6 @@
 }
 
 @media screen and (max-width: 600px) {
-    .filter__header{
-        margin-right: 8px;
-        margin-left: 8px;
-        font-size: 20px;
-    }
     .filter__subheader{
         margin-right: 8px;
         margin-left: 8px;

@@ -1,21 +1,11 @@
-$primary-color: #B34180;
-$gray-color: rgb(242, 241, 249);
-$grayblue-color: #597D8C;
-$text-color: #FFFFFF;
-
+@import "./App.module.scss";
 
 .footer {
-    background-color: $text-color;
+    background-color: $white-color;
     padding: 2% 4%;
     margin-top: 16px;
     font-size: 14px;
     color: $grayblue-color;
-
-    &__container {
-        margin-top: 2%;
-        margin-right: auto;
-        margin-left: auto;
-    }
 
     &__llistes {
         width: 100%;
@@ -39,7 +29,7 @@ $text-color: #FFFFFF;
 
             &>li>a {
                 text-decoration: none;
-                color: white;
+                color: $white-color;
                 margin: 2rem;
             }
         }
@@ -56,11 +46,8 @@ $text-color: #FFFFFF;
         margin-top: 8px;
         padding: 2rem 1rem;
         font-size: 12px;
+        margin-bottom: 8em;
 
-        &__container {
-            margin-top: 0rem;
-            margin-bottom: 4.7em;
-        }
         &__llistes {
     
             &__links {

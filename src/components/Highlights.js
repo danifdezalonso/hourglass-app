@@ -6,7 +6,7 @@ import styles from "./Highlights.module.scss";
 
 const Highlights = (props) => {
   return (
-    <div className={styles.containerFluid}>
+    <div className={styles.container__fluid}>
       <div className={generalStyles.container}>
         <div className={styles.title}>{props.title}</div>
         <div className={styles.filter__itemlist}>

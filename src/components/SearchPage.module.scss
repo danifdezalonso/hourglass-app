@@ -1,6 +1,8 @@
+@import "./App.module.scss";
+
 .barstyling {
     width: 100%;
-    background-color: #EEE;
+    background-color: $gray-color-light;
     border: none;
     padding: 0.5rem;
     height: 28px;

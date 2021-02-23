@@ -1,5 +1,7 @@
+@import "./App.module.scss";
+
 .box{
-    background-color: white;
+    background-color: $white-color;
     // border: 1px black solid;
     width: 150px;
     height: 150px;
@@ -24,7 +26,7 @@
     }
 
     &:hover{
-        background-color:#eee;
+        background-color:$gray-color-light;
         cursor: pointer;
     }
 }

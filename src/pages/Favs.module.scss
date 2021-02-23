@@ -1,0 +1,11 @@
+@import "../components/App.module.scss";
+
+.container__flex{
+    display:flex;
+    flex-direction:row;
+    justify-content:left;
+    margin-top:16px;
+    margin: 16px auto auto auto;
+    max-width: 1150px;
+    flex-wrap:wrap;
+}

@@ -1,8 +1,10 @@
-.containerFluid{
-    width:100%;
-    padding: 16px 0px;
-    background-color: rgb(242, 241, 249);
+@import "/src/components/App.module.scss";
+
+.container__fluid{
+    padding: 42px 0 0 0;
+    background-color: $gray-color-light;
 }
+
 .filter__header {
     font-weight: 600;
     font-size: 2rem;
@@ -10,7 +12,7 @@
 
 .filter__subheader {
     font-weight: 300;
-    color: #acacac;
+    color:$gray-color-dark;
     font-size: 1.25rem;
 }
 .title{
@@ -29,7 +31,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .containerFluid{
+    .container__fluid{
         padding-top: 6px;
         padding-bottom: 6px;
     }
