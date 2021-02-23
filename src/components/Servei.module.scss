@@ -10,7 +10,7 @@ $text-color: black;
     margin: 1rem 0.5rem 1rem 0.5rem;
 
     &__title{
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         text-decoration: none;
         font-weight: 600;
         color: $text-color;
@@ -28,11 +28,11 @@ $text-color: black;
         max-width: 300px;
         font-weight: 400;
         margin-top: 8px;
-        margin: 1rem 1rem 1rem 0rem;
+        margin-bottom: 16px;
         color: $text-color;
     }
     &__image > img{
-        width: 240px;
+        width: 220px;
         object-fit: cover;
         border-radius: 0.25rem;
     }
