@@ -52,7 +52,6 @@ const Login = (props) => {
           </>
         )}
       </div>
-      Login
     </div>
   );
 };
