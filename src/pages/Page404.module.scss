@@ -1,0 +1,13 @@
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    h4{
+        font-size: 4rem;
+        font-weight: 800;
+    }
+}

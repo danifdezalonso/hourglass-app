@@ -10,9 +10,6 @@ const Profile = ({ handleLogout, user }) => {
           <li>Home</li>
           <li>Profile</li>
         </span>
-        <span className={styles.breadcrumb__right}>
-          <button onClick={handleLogout}>Log out des del perfil </button>
-        </span>
       </ul>
       <h1>El meu perfil</h1>
     </>

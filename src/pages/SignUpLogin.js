@@ -85,8 +85,6 @@ const SignUpLogin = () => {
         </>
       ) : (
         <>
-          <h1>Benvinguda</h1>
-          <h4>Accedeix</h4>
           <Login
             user={user}
             email={email}
