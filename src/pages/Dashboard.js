@@ -14,7 +14,7 @@ const Dashboard = ({ handleLogout, user }) => {
     <>
       <Router>
         <div className="App">
-          <Header />
+          <Header handleLogout={handleLogout} />
           <Switch>
             <Route path="/" component={Home} exact={true} />
             <Route exact path="/chat" component={Chat} />
@@ -23,7 +23,6 @@ const Dashboard = ({ handleLogout, user }) => {
             <Route exact path="/add" component={AddItem} />
             <Route component={Page404} />
           </Switch>
-          <button onClick={handleLogout}>Log out </button>
           <Footer />
         </div>
       </Router>

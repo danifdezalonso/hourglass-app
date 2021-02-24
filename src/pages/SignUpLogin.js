@@ -81,10 +81,6 @@ const SignUpLogin = () => {
     <>
       {user ? (
         <>
-          {/* <Profile handleLogout={handleLogout} user={user} />
-          <Favs handleLogout={handleLogout} user={user} />
-          <Chat handleLogout={handleLogout} user={user} />
-          <AddItem handleLogout={handleLogout} user={user} /> */}
           <Dashboard handleLogout={handleLogout} user={user} />
         </>
       ) : (

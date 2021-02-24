@@ -61,7 +61,6 @@
     }
   }
 }
-
 .header__navigation__llista__item {
   border-bottom: 3px solid transparent;
 }
@@ -74,6 +73,17 @@
   display: none;
 }
 
+.header__navigaton__secondary__button {
+  color:$primary-color;
+  background-color:white;
+  border: 2px solid $primary-color;
+  font-size: 1rem;
+
+  &:hover{
+    background-color: $primary-color;
+    color: white;
+  }
+}
 @media screen and (max-width: 600px) {
   .active__page__mobile {
     border-bottom: 2px solid $primary-color;
