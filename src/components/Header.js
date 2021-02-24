@@ -11,7 +11,7 @@ import IconProfile from "../images/Icon/plus_profile.svg";
 import IconHome from "../images/Icon/plus_home.svg";
 import IconFavs from "../images/Icon/plus_heart.svg";
 
-const Header = () => {
+const Header = ({ handleLogout }) => {
   return (
     <>
       {/* DESKTOP */}
@@ -49,15 +49,14 @@ const Header = () => {
                 >
                   <li>Favorits</li>
                 </NavLink>
-                <NavLink
-                  to="/login"
-                  className={styles.header__navigation__llista__item}
-                  activeClassName={styles.active__page}
-                >
-                  <li>Accedir</li>
-                </NavLink>
               </ul>
             </div>
+            <button
+              className={styles.header__navigaton__secondary__button}
+              onClick={handleLogout}
+            >
+              Desconnectar
+            </button>
             <Link to="/add">
               <Button text="Afegeix" />
             </Link>

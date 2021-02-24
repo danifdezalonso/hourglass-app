@@ -1,8 +1,19 @@
 import React from "react";
-import generalStyles from "../components/App.module.scss";
+import SignUpLogin from "./SignUpLogin";
+import styles from "./Profile.module.scss";
 
-const Profile = () => {
-  return <h1>Perfil</h1>;
+const Profile = ({ handleLogout, user }) => {
+  return (
+    <>
+      <ul className={styles.breadcrumb}>
+        <span className={styles.breadcrumb__left}>
+          <li>Home</li>
+          <li>Profile</li>
+        </span>
+      </ul>
+      <h1>El meu perfil</h1>
+    </>
+  );
 };
 
 export default Profile;

@@ -5,17 +5,16 @@
 }
 
 .container__fluid {
-  border-bottom: 1px $gray-color-light solid;
-  position: sticky;
-  top:0;
-  background-color: $white-color;
+  border-bottom: 1px rgba(236, 239, 241, 0.5) solid;
+  background-color: white;
+  position: fixed;
+  top: 0;
 
   .active__page {
     border-bottom: 3px $primary-color solid;
   }
 
   .header {
-
     max-width: 1024px;
     padding-right: 16px;
     padding-left: 16px;
@@ -53,7 +52,7 @@
 
         a {
           text-decoration: none;
-          color: $text-color-black;
+          color: black;
           padding: 5px;
         }
 
@@ -65,7 +64,6 @@
     }
   }
 }
-
 .header__navigation__llista__item {
   border-bottom: 3px solid transparent;
 }
@@ -78,6 +76,17 @@
   display: none;
 }
 
+.header__navigaton__secondary__button {
+  color:$primary-color;
+  background-color:white;
+  border: 1px solid $primary-color;
+  font-size: 1rem;
+
+  &:hover{
+    background-color: $primary-color;
+    color: white;
+  }
+}
 @media screen and (max-width: 600px) {
   .active__page__mobile {
     border-bottom: 2px solid $primary-color;
@@ -89,7 +98,7 @@
     text-align: center;
     padding: 0.5rem;
     margin-top: 6px;
-    border-bottom: 1px $gray-color-light solid;
+    border-bottom: 1px rgba(236, 239, 241, 0.5) solid;
 
     img {
       height: 36px;
@@ -106,7 +115,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: $white-color;
+    background-color: #fff;
     z-index: 20;
 
     .mobile__tabbar {
@@ -116,8 +125,8 @@
       align-items: center;
       justify-content: space-around;
       min-height: 64px;
-      border-top: 1px solid $gray-color-light ;
-      box-shadow: -1px 3px 9px 3px $box-shadow;
+      border-top: 1px solid #eceff1;
+      box-shadow: -1px 3px 9px 3px #4a48485c;
 
       &__option {
         position: relative;
@@ -128,7 +137,7 @@
 
       &__option__title {
         margin-top: 8px;
-        color: $text-color-black;
+        color: black;
         text-decoration: none;
       }
     }
