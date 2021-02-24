@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
 import fire from "../fire.js";
 import Login from "../components/Login.js";
-import Profile from "../pages/Profile.js";
-import Favs from "../pages/Favs.js";
-import Chat from "./Chat";
-import AddItem from "./AddItem.js";
+import Dashboard from "../pages/Dashboard";
 
 const SignUpLogin = () => {
   const [user, setUser] = useState("");
@@ -84,10 +81,11 @@ const SignUpLogin = () => {
     <>
       {user ? (
         <>
-          <Profile handleLogout={handleLogout} user={user} />
+          {/* <Profile handleLogout={handleLogout} user={user} />
           <Favs handleLogout={handleLogout} user={user} />
           <Chat handleLogout={handleLogout} user={user} />
-          <AddItem handleLogout={handleLogout} user={user} />
+          <AddItem handleLogout={handleLogout} user={user} /> */}
+          <Dashboard handleLogout={handleLogout} user={user} />
         </>
       ) : (
         <>

@@ -49,13 +49,6 @@ const Header = () => {
                 >
                   <li>Favorits</li>
                 </NavLink>
-                <NavLink
-                  to="/login"
-                  className={styles.header__navigation__llista__item}
-                  activeClassName={styles.active__page}
-                >
-                  <li>Accedir</li>
-                </NavLink>
               </ul>
             </div>
             <Link to="/add">
