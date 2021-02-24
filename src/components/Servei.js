@@ -11,15 +11,13 @@ const Servei = (props) => {
         activeClassName={styles.active__page}
       >
     <div className={styles.box}>
-      <div className={styles.box__icon}> 
-        <img className={styles.box__icon__icon} src={love} alt="fav"></img>
-      </div>
       <div className={styles.box__title}>{props.title}</div>
       <div className={styles.box__description}>{props.description}</div>
       <div className={styles.box__image}>
         <img src={props.image} alt={props.imageAlt} />
       </div>
-      <button className={styles.box__button}>Seleccionar</button>
+    
+      {/* <button className={styles.box__button}>Seleccionar</button> */}
     </div>
     </NavLink>
   );

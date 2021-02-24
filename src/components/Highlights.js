@@ -1,7 +1,7 @@
 import React from "react";
 import generalStyles from "./App.module.scss";
 import Servei from "./Servei";
-import Image1 from "../images/Serveis/personal-teacher.jpg"; // Reset i CSS general
+import Image1 from "../images/Serveis/fitxa-servei-img.jpg";
 import styles from "./Highlights.module.scss";
 
 const Highlights = (props) => {

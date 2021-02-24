@@ -1,6 +1,6 @@
 import React from "react";
 import Servei from "../components/Servei.js";
-import Image1 from "../images/Serveis/personal-teacher.jpg";
+import Image1 from "../images/Serveis/fitxa-servei-img.jpg";
 import styles from "./Favs.module.scss";
 
 const Favs = () => {

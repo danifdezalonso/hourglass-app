@@ -8,15 +8,6 @@
     margin: 1rem 0.5rem 1rem 0.5rem;
     width: 220px;
 
-    &__icon{
-        margin: 6px;
-
-        &__icon{
-            width:30px;
-            float:right;
-        }
-    }
-
     &__title{
         font-size: 1.25rem;
         text-decoration: none;
@@ -46,12 +37,19 @@
         object-fit: cover;
         border-radius: 0.25rem;
     }
+    &__icon{
+
+        &__icon{
+            width:42px;
+            margin-top:8px;
+        }
+    }
     
     &__button {
-        margin-top: 0.5rem;
+        margin-top: 8px;
         margin-left: 0rem;
         border-radius: 0.5rem;
-        width: 100%;
+        width: 70%;
     }
 }
 
@@ -71,10 +69,19 @@
         }
         &__image > img{
             width: 130px;
-            height:90px;
+            height:80px;
         }
+        &__icon{
+
+            &__icon{
+                width:21px;
+                margin-top:8px;
+                display:none;
+            }
+        }
+        
         &__button {
             display:none;
         }
-    }    
+    }
 }

@@ -1,7 +1,7 @@
 $primary-color: #B34180;
 $primary-color-hover: #a2035b;
 
-$background-color: #ffdaee;
+$background-color: #FFFFFF;
 
 $white-color: #FFFFFF;
 $gray-color-light: rgb(242, 241, 249);
@@ -9,6 +9,8 @@ $gray-color-dark: #acacac;
 $grayblue-color: #597D8C;
 
 $box-shadow: #4a48485c;
+
+$box-shadow2: 0 2px 10px 0 #dcdcdc;
 
 $text-color-black:black;
 
@@ -33,6 +35,10 @@ a:focus {
 
 .container__fluid{
     width:100%;
+}
+.containerFluid{
+    width:100%;
+    background-color:rgb(242, 241, 249);
 }
 
 h1{

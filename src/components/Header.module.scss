@@ -6,12 +6,16 @@
 
 .container__fluid {
   border-bottom: 1px $gray-color-light solid;
+  position: sticky;
+  top:0;
+  background-color: $white-color;
 
   .active__page {
     border-bottom: 3px $primary-color solid;
   }
 
   .header {
+
     max-width: 1024px;
     padding-right: 16px;
     padding-left: 16px;

@@ -4,113 +4,152 @@
     border-radius: 1px $text-color-black solid;
     background-color:$background-color;
     border-radius: 0.75rem;
-    padding: 2rem;
+    padding: 0 20px 52px;
     width: 700px;
+    box-shadow: $box-shadow2;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    margin-top:2rem;
 
-    &__userImage > img{
-        width:80px;
-    }
-
-    &__userProfile{
+    &__upperCont{
+        position: sticky;
+        background-color: white;
+        padding:1rem;
+        top:66px;
         display:flex;
-        flex-direction:column;
-        
-        &__name{
-            font-size:24px; 
+        justify-content:space-between;
+        margin-bottom: 0.5rem;
 
-        }
-        &__about{
-            font-size:16px; 
-            font-weight:200;
-        }
-    }
+        &__user{
+            display:flex;
+            align-items: center;
+            width:200px;
+            margin:0;
+            padding:0;
 
-    &__containerFlex{
-        display:flex;
-        flex-direction:column;
-        flex-wrap:wrap;
-
-        &__iconStar{
-            width:130px;
-
-            &__star{
-                width:20px;
-                float:right;
-                margin:0 3px;
+            &__userImage > img{
+                width:42px;
+                height:42px;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+            &__name{
+                font-size:1.55rem;
+                font-weight: 600;
+                padding-left:1rem;
+                display:flex;
+                align-items: center;
             }
         }
 
-        &__numValoracions{
-            width:115px;
+        &__favXat{
             display:flex;
-            margin: 6px 0;
-            justify-content: center;
-            
+            flex-direction:row;
+            margin:0;
+            padding:0;
+            align-items: center;
+
+            &__fav > img{
+                width:24px;
+                height: 24px;
+                margin-right: 1rem;
+            }
+            &__xat{
+            }
         }
     }
-
-    &__container{
-
-        &__fav{
-                width:40px;
-        }
-    }
-    
-
-    &__title{
-        font-size: 24px;
-        text-decoration: none;
-        font-weight: 600;
-        color: $text-color-black;
-    }
-
-    &__description {
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 100%;
-        font-size: 1rem;
-        text-decoration: none;
-        font-weight: 400;
-        margin-top: 8px;
-        margin-bottom: 16px;
-        color: $text-color-black;
-    }
-
     &__image > img{
         width: 700px;
         height: 300px;
         object-fit: cover;
-        border-radius: 0.25rem;
+        border-radius:10px;
     }
 
-    &__localitzacio{
-        display:flex;
-        flex-direction:row;
-        font-size:18px;
-        justify-content:center;
-        margin:24px 0;
+    &__details{
+        margin: auto;
+        
+        &__title{
+            font-size: 2rem;
+            margin-top: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            color: $text-color-black;
+            margin-bottom:12px;
+        }
 
-        &__icon{
-            width:40px;
+        &__categoria{
+            font-size: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px $gray-color-light solid;
+            border-top: 2px $gray-color-light solid;
+
+            &__tag{
+                color:$gray-color-dark;
+                margin-right:1rem;
+                font-weight: 400;
+            }
         }
-        &__barri{
-            margin-top:auto;
-            margin-bottom:auto;
+
+        &__etiquetes{
+            font-size: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px $gray-color-light solid;
+
+
+            &__etiqueta{
+                color:$gray-color-dark;
+                margin-right:1rem;
+                font-weight: 400;
+            }
         }
-        &__ciutat{
-            margin-top:auto;
-            margin-bottom:auto;
+        &__description {
+            max-width: 100%;
+            line-height: 1.5rem;
+            font-size: 1rem;
+            text-decoration: none;
+            font-weight: 400;
+            margin-top: 1rem;
+            margin-bottom: 16px;
+            color: $text-color-black;
         }
-    }
-    
-    &__button {
-        margin-top: 0.5rem;
-        margin-left: 0rem;
-        border-radius: 0.5rem;
-        width: 100%;
+
+        &__localitzacio{
+            display: flex;
+            justify-content: space-between;
+            font-size:18px;
+            margin:24px 0;
+            color: $gray-color-dark;
+            font-size: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px $gray-color-light solid;
+            border-top: 2px $gray-color-light solid;
+
+            &__icon{
+                width:10px;
+            }
+            &__barri{
+                margin-top:auto;
+                margin-bottom:auto;
+            }
+            &__ciutat{
+                margin-top:auto;
+                margin-bottom:auto;
+            }
+
+            img {
+                width: 24px;
+                height: 24px;
+                margin-right: 0.5rem;
+            }
+        }
+        &__data{ 
+            color:$gray-color-dark;
+        }   
+        
     }
 }
 
@@ -118,7 +157,7 @@
 @media screen and (max-width: 600px) {
     .box{
         padding: 0.6rem;
-        margin: 0.4rem;
+        margin: 0 12px 12px 12px;
     
         &__title{
             font-size: 16px; 
