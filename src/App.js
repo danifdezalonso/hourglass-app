@@ -18,11 +18,11 @@ export default function App() {
         <Header />
         <Switch>
           <Route path="/" component={Home} exact={true} />
-          <Route exact path="/chat" component={SignUpLogin} />
-          <Route exact path="/profile" component={SignUpLogin} />
-          <Route exact path="/favs" component={SignUpLogin} />
+          <Route exact path="/chat" component={Chat} />
+          <Route exact path="/profile" component={Profile} />
+          <Route exact path="/favs" component={Favs} />
           <Route exact path="/login" component={SignUpLogin} />
-          <Route exact path="/add" component={SignUpLogin} />
+          <Route exact path="/add" component={AddItem} />
           <Route component={Page404} />
         </Switch>
         <Footer />

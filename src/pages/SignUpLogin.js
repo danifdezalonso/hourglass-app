@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import fire from "../fire.js";
 import Login from "../components/Login.js";
 import Profile from "../pages/Profile.js";
+import Favs from "../pages/Favs.js";
+import Chat from "./Chat";
+import AddItem from "./AddItem.js";
 
 const SignUpLogin = () => {
   const [user, setUser] = useState("");
@@ -80,7 +83,12 @@ const SignUpLogin = () => {
   return (
     <>
       {user ? (
-        <Profile handleLogout={handleLogout} />
+        <>
+          <Profile handleLogout={handleLogout} user={user} />
+          <Favs handleLogout={handleLogout} user={user} />
+          <Chat handleLogout={handleLogout} user={user} />
+          <AddItem handleLogout={handleLogout} user={user} />
+        </>
       ) : (
         <>
           <h1>Benvinguda</h1>
