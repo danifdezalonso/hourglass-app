@@ -9,7 +9,13 @@ const Footer = () => {
         <div className={styles.footer__container}>
           <div className={styles.footer__llistes}>
             <ul className={styles.footer__llistes__links}>
-              <li> <img src={logo} alt="Logo"></img> </li> <li>Copyright © 2021 WallaServices</li>
+              <li>
+                {" "}
+                <img src={logo} alt="Logo"></img>{" "}
+              </li>{" "}
+              <li className={styles.footer__llistes__links__titlemax}>
+                Copyright © 2021 WallaServices
+              </li>
             </ul>
             <ul className={styles.footer__llistes__links}>
               <li>
