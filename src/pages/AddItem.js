@@ -1,5 +1,4 @@
 import React from "react";
-import SignUpLogin from "./SignUpLogin";
 import styles from "./Profile.module.scss";
 
 const AddItem = ({ handleLogout }) => {
