@@ -2,28 +2,28 @@
 
 .footer {
     background-color: $white-color;
-    padding: 2% 4%;
+    padding: 2rem 0rem;
     margin-top: 16px;
     font-size: 14px;
     color: $grayblue-color;
 
     &__llistes {
-        width: 100%;
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        padding-right: 16px;
+        padding-left: 16px;
 
         &__links {
             list-style-type: none;
             position: center;
             justify-content: center;
-            padding: 4%;
 
             li {
                 padding-bottom: 8%;
 
-                img{
-                    width:42px;
+                img {
+                    width: 42px;
                 }
             }
 
@@ -42,32 +42,40 @@
         display: flex;
         flex-wrap: wrap;
     }
+
     .footer {
         margin-top: 8px;
-        padding: 2rem 1rem;
+        padding: 0rem 0rem;
         font-size: 12px;
         margin-bottom: 8em;
 
         &__llistes {
-    
+                    flex-direction: column;
+
+
             &__links {
                 list-style-type: none;
                 position: center;
                 justify-content: center;
-                padding: 1rem 2rem;
-    
+            padding:0.5rem 0rem;
+
+                &__titlemax{
+                    width: 100%;
+                }
+
                 li {
                     padding-bottom: 5px;
 
-                    img{
-                        width:28px;
+                    img {
+                        width: 28px;
                     }
                 }
             }
+
             &>li>a {
                 margin: 1rem;
             }
-    
-        }
+
         }
     }
+}
