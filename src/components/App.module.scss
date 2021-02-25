@@ -99,7 +99,6 @@ ul.breadcrumb li a:hover {
 }
 @media screen and (max-width: 600px) {
     .container {
-        margin-top: 18px;
         margin-bottom: 6px;
     }
 
@@ -118,10 +117,12 @@ ul.breadcrumb li a:hover {
     }
 
     //* FIL D'ARIADNA *//
+    .header__faker {
+       display: none;
+    }
     ul.breadcrumb {
         padding: 10px;
         list-style: none;
-        background-color: #eee;
         display: flex;
         justify-content: space-between;
         align-items: center;
