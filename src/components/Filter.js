@@ -1,5 +1,4 @@
 import React from "react";
-import generalStyles from "./App.module.scss"; // Reset i CSS general
 import styles from "./Filter.module.scss";
 import ServeiPrincipal from "./ServeiPrincipal";
 import IconTotes from "../images/ServeisPrincipals/category_All.svg";
@@ -14,8 +13,8 @@ import IconLlar from "../images/ServeisPrincipals/category_llar.svg";
 
 const Filter = () => {
   return (
-    <div className={generalStyles.container}>
-      <h1 className={generalStyles.filter__header}>Quins serveis estàs buscant?</h1>
+    <div className={styles.container}>
+      <h1 className={styles.filter__header}>Quins serveis estàs buscant?</h1>
       <h4 className={styles.filter__subheader}>
         Els teus veïns estan disposats a ajudar-te, tu també hi vols participar?
         Uneix-t'hi.

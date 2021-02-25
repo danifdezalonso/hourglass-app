@@ -5,13 +5,22 @@ import styles from "./Profile.module.scss";
 const Profile = ({ handleLogout, user }) => {
   return (
     <>
-      <ul className={styles.breadcrumb}>
-        <span className={styles.breadcrumb__left}>
-          <li>Home</li>
-          <li>Profile</li>
-        </span>
-      </ul>
-      <h1>El meu perfil</h1>
+      <div className={styles.containerFluid}>
+        <div className={styles.container}>
+          <div>
+            <div className={styles.header__faker}></div>
+            <ul className={styles.breadcrumb}>
+              <span className={styles.breadcrumb__left}>
+                <li>Home</li>
+                <li>Profile</li>
+              </span>
+            </ul>
+          </div>
+        </div>
+        <h1>Els meu perfil</h1>
+
+        {/* contingut aqui */}
+      </div>
     </>
   );
 };

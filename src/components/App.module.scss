@@ -31,6 +31,9 @@ a:focus {
 .container {
     margin-right: auto;
     margin-left: auto;
+    max-width: 1024px;
+    padding-right: 16px;
+    padding-left: 16px;
 }
 
 .container__fluid {
@@ -53,12 +56,9 @@ h1 {
 ul.breadcrumb {
     padding: 10px 16px;
     list-style: none;
-    background-color: #eee;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 3rem;
-    padding-left: 3rem;
 
     &__left {
         justify-content: flex-start;
@@ -74,7 +74,6 @@ ul.breadcrumb li {
     display: inline;
     font-size: 18px;
     font-size: 0.75rem;
-
 }
 
 /* Add a slash symbol (/) before/behind each list item */
@@ -95,7 +94,9 @@ ul.breadcrumb li a:hover {
     color: #01447e;
     text-decoration: underline;
 }
-
+.header__faker{
+    height: 64px;
+}
 @media screen and (max-width: 600px) {
     .container {
         margin-top: 18px;
