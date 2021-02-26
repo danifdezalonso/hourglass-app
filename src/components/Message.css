@@ -1,0 +1,32 @@
+
+.message{
+    margin: 1rem;
+    width: fit-content;
+}
+
+.text-padding{
+    padding: 1rem;
+}
+.message__user{
+    color:white;
+    margin-left: auto;
+    text-align: left;
+}
+
+.message__userCard{
+    background-color: red;
+
+}
+
+.message__guestCard{
+    background-color: yellow;
+}
+
+.message__userName {
+    font-weight: 800;
+}
+
+.message__message {
+    font-size: 0.875rem;
+    margin-left: 1rem;
+}

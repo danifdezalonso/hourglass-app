@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./Profile.module.scss";
+import ChatIndividual from "../components/ChatIndividual.js";
 
-const Chat = ({ user, handleLogout }) => {
+const Chat = () => {
   return (
     <>
       <div className={styles.containerFluid}>
@@ -17,8 +18,8 @@ const Chat = ({ user, handleLogout }) => {
           </div>
         </div>
         <h1>Els meus xats</h1>
-
         {/* contingut aqui */}
+        <ChatIndividual />
       </div>
     </>
   );
