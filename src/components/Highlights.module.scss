@@ -1,8 +1,9 @@
 @import "/src/components/App.module.scss";
 
 .container__fluid{
-    padding: 42px 0 0 0;
+    padding: 42px 0 0pxm 0px;
     background-color: $gray-color-light;
+    
 }
 
 .filter__subheader {
@@ -16,18 +17,20 @@
     text-align:center;
     font-size: 1.75rem;
     font-weight: 600;
+    margin-bottom:1rem;
 }
 
 .filter__itemlist {
     display: flex;
-    overflow-x: scroll;
-    max-width: 1150px;
     margin:auto;
+    justify-content:center;
+    flex-wrap:wrap;
+    max-width:800px;
 }
 
 @media screen and (max-width: 600px) {
     .container__fluid{
-        padding-top: 6px;
+        padding-top: 24px;
         padding-bottom: 6px;
     }
     h2{
@@ -36,5 +39,6 @@
     }
     .title{
         font-size: 18px;
+        margin-bottom:0.2rem;
     }
 }

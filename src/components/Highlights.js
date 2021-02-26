@@ -1,8 +1,13 @@
 import React from "react";
 import generalStyles from "./App.module.scss";
-import Servei from "./Servei";
-import Image1 from "../images/Serveis/fitxa-servei-img.jpg";
+import Categoria from "./Categoria.js";
 import styles from "./Highlights.module.scss";
+import Jardineria from "../images/ServeisPrincipals/sub_category_gardening.svg";
+import Neteja from "../images/ServeisPrincipals/sub_category_llar.svg";
+import Electricista from "../images/ServeisPrincipals/sub_category_electricista.svg";
+import Lampista from "../images/ServeisPrincipals/sub_category_lampista.svg";
+
+
 
 const Highlights = (props) => {
   return (
@@ -10,35 +15,29 @@ const Highlights = (props) => {
       <div className={generalStyles.container}>
         <div className={styles.title}>{props.title}</div>
         <div className={styles.filter__itemlist}>
-          <Servei
-            title="Professor particular "
-            description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, doloremque nobis, quae necessitatibus dolorem quas illo non minima possimus quibusdam repellendus deserunt odit explicabo."
-            image={Image1}
+          <Categoria
+            title="Tasques de neteja"
+            description="55 serveis"
+            image={Neteja}
             imageAlt="Descripció imatge 1"
           />
-          <Servei
-            title="Professor particular"
-            description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, doloremque nobis, quae necessitatibus dolorem quas illo non minima possimus quibusdam repellendus deserunt odit explicabo."
-            image={Image1}
+          <Categoria
+            title="Electricistes"
+            description="36 serveis"
+            image={Electricista}
             imageAlt="Descripció imatge 1"
           />
-          <Servei
-            title="Professor particular"
-            description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, doloremque nobis, quae necessitatibus dolorem quas illo non minima possimus quibusdam repellendus deserunt odit explicabo."
-            image={Image1}
+          <Categoria
+            title="Jardineria"
+            description="30 serveis"
+            image={Jardineria}
             imageAlt="Descripció imatge 1"
           />
-          <Servei
-            title="Professor particular"
-            description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, doloremque nobis, quae necessitatibus dolorem quas illo non minima possimus quibusdam repellendus deserunt odit explicabo."
-            image={Image1}
-            imageAlt="Descripció imatge 1"
-          />
-          <Servei
-            title="Professor particular"
-            description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, doloremque nobis, quae necessitatibus dolorem quas illo non minima possimus quibusdam repellendus deserunt odit explicabo."
-            image={Image1}
-            imageAlt="Descripció imatge 1"
+          <Categoria
+             title="Lampistes"
+             description="45 serveis"
+             image={Lampista}
+             imageAlt="Descripció imatge 1"
           />
         </div>
       </div>
@@ -47,3 +46,15 @@ const Highlights = (props) => {
 };
 
 export default Highlights;
+
+//llar
+  //tasques de neteja
+  //electricistes
+  //Jardiners
+  //Lampistes
+  //fusters
+  //interiorisme
+  //muntador de mobles
+  //pintor
+  //mudances
+
