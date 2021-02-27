@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Tecnologia.module.scss";
-
+import { Link } from "react-router-dom";
 const Tecnologia = () => {
   return (
     <div className={styles.containerFluid}>
@@ -8,10 +8,12 @@ const Tecnologia = () => {
         <div>
           <div className={styles.header__faker}></div>
           <ul className={styles.breadcrumb}>
-            <span className={styles.breadcrumb__left}>
+            <Link to="/">
               <li>Home</li>
+            </Link>
+            <Link to={window.location.pathname}>
               <li>Tecnologia</li>
-            </span>
+            </Link>
           </ul>
         </div>
         <h1 className={styles.filter__header}>Tecnologia</h1>

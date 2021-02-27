@@ -59,46 +59,47 @@ ul.breadcrumb {
     padding: 10px 16px;
     list-style: none;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
-    &__left {
-        justify-content: flex-start;
-    }
+    a {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        color: $gray-color-dark;
 
-    &__right {
-        justify-content: flex-end;
+        &:hover{
+            color: $primary-color;
+        }
+
+        &:not(:first-child) {
+            margin-left: 8px;
+        }
+
+        &::after {
+            margin-left: 8px;
+            color: $gray-color-dark;
+            content: "/\00a0";
+        }
     }
 }
 
 /* Display list items side by side */
-ul.breadcrumb li {
+ul.breadcrumb>a>li {
     display: inline;
     font-size: 18px;
     font-size: 0.75rem;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
-ul.breadcrumb li+li:before {
+ul.breadcrumb>a>li+li:before {
     padding: 8px;
     color: black;
     content: "/\00a0";
 }
 
-/* Add a color to all links inside the list */
-ul.breadcrumb li a {
-    color: #0275d8;
-    text-decoration: none;
-}
-
-/* Add a color on mouse-over */
-ul.breadcrumb li a:hover {
-    color: #01447e;
-    text-decoration: underline;
-}
-.header__faker{
+.header__faker {
     height: 64px;
 }
+
 @media screen and (max-width: 600px) {
     .container {
         margin-bottom: 2rem;
@@ -120,13 +121,13 @@ ul.breadcrumb li a:hover {
 
     //* FIL D'ARIADNA *//
     .header__faker {
-       display: none;
+        display: none;
     }
+
     ul.breadcrumb {
         padding: 10px;
         list-style: none;
         display: flex;
-        justify-content: space-between;
         align-items: center;
         padding-right: 2rem;
         padding-left: 0.5rem;

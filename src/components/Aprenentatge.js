@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Aprenentatge.module.scss";
+import { Link } from "react-router-dom";
 
 const Aprenentatge = () => {
   return (
@@ -8,10 +9,12 @@ const Aprenentatge = () => {
         <div>
           <div className={styles.header__faker}></div>
           <ul className={styles.breadcrumb}>
-            <span className={styles.breadcrumb__left}>
+            <Link to="/">
               <li>Home</li>
+            </Link>
+            <Link to={window.location.pathname}>
               <li>Aprenentatge</li>
-            </span>
+            </Link>
           </ul>
         </div>
         <h1 className={styles.filter__header}>Aprenentatge</h1>

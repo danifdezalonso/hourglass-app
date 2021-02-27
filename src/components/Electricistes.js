@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Electricistes.module.scss";
 
 const Electricistes = () => {
@@ -8,10 +9,12 @@ const Electricistes = () => {
         <div>
           <div className={styles.header__faker}></div>
           <ul className={styles.breadcrumb}>
-            <span className={styles.breadcrumb__left}>
+            <Link to="/">
               <li>Home</li>
-              <li>Electricistes</li>
-            </span>
+            </Link>
+            <Link to={window.location.pathname}>
+              <li>Profile</li>
+            </Link>
           </ul>
         </div>
         <h1 className={styles.filter__header}>Electricistes</h1>

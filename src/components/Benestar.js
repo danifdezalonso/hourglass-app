@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Benestar.module.scss";
+import { Link } from "react-router-dom";
 
 const Benestar = () => {
   return (
@@ -8,10 +9,12 @@ const Benestar = () => {
         <div>
           <div className={styles.header__faker}></div>
           <ul className={styles.breadcrumb}>
-            <span className={styles.breadcrumb__left}>
+            <Link to="/">
               <li>Home</li>
+            </Link>
+            <Link to={window.location.pathname}>
               <li>Benestar</li>
-            </span>
+            </Link>
           </ul>
         </div>
         <h1 className={styles.filter__header}>Benestar</h1>

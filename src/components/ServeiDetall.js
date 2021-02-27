@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./ServeiDetall.module.scss";
 import love from "../images/Icon/love.svg";
+import { Link } from "react-router-dom";
 
 const ServeiDetall = (props) => {
   return (
@@ -9,11 +10,15 @@ const ServeiDetall = (props) => {
         <div>
           <div className={styles.header__faker}></div>
           <ul className={styles.breadcrumb}>
-            <span className={styles.breadcrumb__left}>
+            <Link to="/">
               <li>Home</li>
-              <li>Categoria</li>
+            </Link>
+            <Link to="/aprenentatge">
+              <li>Aprenentatge</li>
+            </Link>
+            <Link to={window.location.pathname}>
               <li>Professor particular</li>
-            </span>
+            </Link>
           </ul>
         </div>
       </div>

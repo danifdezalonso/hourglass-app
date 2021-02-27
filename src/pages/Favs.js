@@ -2,6 +2,7 @@ import React from "react";
 import Servei from "../components/Servei.js";
 import Image1 from "../images/Serveis/fitxa-servei-img.jpg";
 import styles from "./Favs.module.scss";
+import { Link } from "react-router-dom";
 
 const Favs = () => {
   return (
@@ -11,10 +12,12 @@ const Favs = () => {
           <div>
             <div className={styles.header__faker}></div>
             <ul className={styles.breadcrumb}>
-              <span className={styles.breadcrumb__left}>
+              <Link to="/">
                 <li>Home</li>
+              </Link>
+              <Link to={window.location.pathname}>
                 <li>Favorits</li>
-              </span>
+              </Link>
             </ul>
           </div>
         </div>

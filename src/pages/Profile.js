@@ -1,6 +1,6 @@
 import React from "react";
-import SignUpLogin from "./SignUpLogin";
 import styles from "./Profile.module.scss";
+import { Link } from "react-router-dom";
 
 const Profile = ({ handleLogout, user }) => {
   return (
@@ -10,14 +10,16 @@ const Profile = ({ handleLogout, user }) => {
           <div>
             <div className={styles.header__faker}></div>
             <ul className={styles.breadcrumb}>
-              <span className={styles.breadcrumb__left}>
+              <Link to="/">
                 <li>Home</li>
+              </Link>
+              <Link to={window.location.pathname}>
                 <li>Profile</li>
-              </span>
+              </Link>
             </ul>
           </div>
         </div>
-        <h1>Els meu perfil</h1>
+        <h1>El meu perfil</h1>
 
         {/* contingut aqui */}
       </div>

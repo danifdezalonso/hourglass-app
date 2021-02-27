@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./PublicitatMarqueting.module.scss";
 
 const PublicitatMarqueting = () => {
@@ -8,10 +9,12 @@ const PublicitatMarqueting = () => {
         <div>
           <div className={styles.header__faker}></div>
           <ul className={styles.breadcrumb}>
-            <span className={styles.breadcrumb__left}>
+            <Link to="/">
               <li>Home</li>
-              <li>Publicitat i Màrqueting</li>
-            </span>
+            </Link>
+            <Link to={window.location.pathname}>
+              <li>Publicitat i màrqueting</li>
+            </Link>
           </ul>
         </div>
         <h1 className={styles.filter__header}>Publicitat i Màrqueting</h1>

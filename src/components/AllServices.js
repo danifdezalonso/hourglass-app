@@ -17,10 +17,12 @@ const AllServices = () => {
           <div>
             <div className={styles.header__faker}></div>
             <ul className={styles.breadcrumb}>
-              <span className={styles.breadcrumb__left}>
+              <Link to="/">
                 <li>Home</li>
+              </Link>
+              <Link to={window.location.pathname}>
                 <li>Tots els serveis</li>
-              </span>
+              </Link>
             </ul>
           </div>
           <h1 className={styles.filter__header}>Tots els serveis</h1>

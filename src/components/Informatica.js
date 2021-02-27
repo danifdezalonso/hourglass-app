@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Informatica.module.scss";
 const Informatica = () => {
   return (
@@ -7,10 +8,12 @@ const Informatica = () => {
         <div>
           <div className={styles.header__faker}></div>
           <ul className={styles.breadcrumb}>
-            <span className={styles.breadcrumb__left}>
+            <Link to="/">
               <li>Home</li>
-              <li>Informàtica</li>
-            </span>
+            </Link>
+            <Link to={window.location.pathname}>
+              <li>Informatica</li>
+            </Link>
           </ul>
         </div>
         <h1 className={styles.filter__header}>Informàtica</h1>

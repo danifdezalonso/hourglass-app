@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./AddItem.module.scss";
 import Select from "react-select";
 import SERVEI_OPTIONS from "../components/Data/serveiOptions";
+import { Link } from "react-router-dom";
 
 const AddItem = () => {
   return (
@@ -10,10 +11,12 @@ const AddItem = () => {
         <div className={styles.container}>
           <div className={styles.header__faker}></div>
           <ul className={styles.breadcrumb}>
-            <span className={styles.breadcrumb__left}>
+            <Link to="/">
               <li>Home</li>
+            </Link>
+            <Link to={window.location.pathname}>
               <li>Afegir servei</li>
-            </span>
+            </Link>
           </ul>
           <div className={styles.card}>
             <div className={styles.card__section}>

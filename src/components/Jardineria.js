@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Jardineria.module.scss";
+
 const Jardineria = () => {
   return (
     <div className={styles.containerFluid}>
@@ -7,10 +9,12 @@ const Jardineria = () => {
         <div>
           <div className={styles.header__faker}></div>
           <ul className={styles.breadcrumb}>
-            <span className={styles.breadcrumb__left}>
+            <Link to="/">
               <li>Home</li>
+            </Link>
+            <Link to={window.location.pathname}>
               <li>Jardineria</li>
-            </span>
+            </Link>
           </ul>
         </div>
         <h1 className={styles.filter__header}>Jardineria</h1>
