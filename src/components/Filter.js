@@ -9,7 +9,7 @@ import IconLlar from "../images/ServeisPrincipals/category_llar3.svg";
 import IconSpa from "../images/ServeisPrincipals/category_benestar.svg";
 import IconConsultoria from "../images/ServeisPrincipals/category_consultoria.svg";
 import IconAltres from "../images/ServeisPrincipals/category_altres.svg";
-
+import { Link } from "react-router-dom";
 
 const Filter = () => {
   return (
@@ -20,51 +20,62 @@ const Filter = () => {
         Uneix-t'hi.
       </h4>
       <div className={styles.filter__itemlist}>
-        <ServeiPrincipal
-          image={IconLogo}
-          imageAlt="Icona de totes les categories"
-          description="Totes les categoríes"
-        />
-        <ServeiPrincipal
-          image={IconLlar}
-          imageAlt="Icona de llar"
-          description="Llar" 
-        />
-        <ServeiPrincipal
-          image={IconInformatica}
-          imageAlt="Icona d'Informàtica"
-          description="Tecnologia"
-        />
-        <ServeiPrincipal
-          image={IconAprenentatge}
-          imageAlt="Icona d'Informàtica"
-          description="Aprenentatge"
-        />
-        <ServeiPrincipal
-          image={IconSpa}
-          imageAlt="Icona Spa"
-          description="Benestar"
-        />
-        <ServeiPrincipal
-          image={IconMecanic}
-          imageAlt="Icona de Mecànica"
-          description="Mecànica"
-        />
-        <ServeiPrincipal
-          image={IconConsultoria}
-          imageAlt="Icona de consultoria"
-          description="Consultoria"
-        />
-        <ServeiPrincipal
-          image={IconAltres}
-          imageAlt="Altres"
-          description="Altres"
-        />
-        {/* <ServeiPrincipal
-          image={IconTotes}
-          imageAlt="Icona de totes les categories"
-          description="Totes les categoríes"
-        /> */}
+        <Link to="/all">
+          <ServeiPrincipal
+            image={IconLogo}
+            imageAlt="Icona de totes les categories"
+            description="Totes les categoríes"
+          />
+        </Link>
+        <Link to="/llar">
+          <ServeiPrincipal
+            image={IconLlar}
+            imageAlt="Icona de llar"
+            description="Llar"
+          />
+        </Link>
+        <Link to="/tecnologia">
+          <ServeiPrincipal
+            image={IconInformatica}
+            imageAlt="Icona d'Informàtica"
+            description="Tecnologia"
+          />
+        </Link>
+        <Link to="/aprenentatge">
+          <ServeiPrincipal
+            image={IconAprenentatge}
+            imageAlt="Icona d'Informàtica"
+            description="Aprenentatge"
+          />
+        </Link>
+        <Link to="/benestar">
+          <ServeiPrincipal
+            image={IconSpa}
+            imageAlt="Icona Spa"
+            description="Benestar"
+          />
+        </Link>
+        <Link to="/mecanica">
+          <ServeiPrincipal
+            image={IconMecanic}
+            imageAlt="Icona de Mecànica"
+            description="Mecànica"
+          />
+        </Link>
+        <Link to="/consultoria">
+          <ServeiPrincipal
+            image={IconConsultoria}
+            imageAlt="Icona de consultoria"
+            description="Consultoria"
+          />
+        </Link>
+        <Link to="/all-services">
+          <ServeiPrincipal
+            image={IconAltres}
+            imageAlt="Altres"
+            description="Altres"
+          />
+        </Link>
       </div>
     </div>
   );
@@ -74,54 +85,53 @@ export default Filter;
 
 //CATEGORIES I SUB-CATEGORIES
 //llar
-  //tasques de neteja
-  //electricistes
-  //Jardiners
-  //Lampistes
-  //fusters
-  //interiorisme
-  //muntador de mobles
-  //pintor
-  //mudances
+//tasques de neteja
+//electricistes
+//Jardiners
+//Lampistes
+//fusters
+//interiorisme
+//muntador de mobles
+//pintor
+//mudances
 
 //tecnologia
-  //informàtica
-  //Webs i applicacions
-  //Publicitat i marketing
-  //community managers
-  //dissenyadors
-  //fotògrafs
-  //filmmakers
+//informàtica
+//Webs i applicacions
+//Publicitat i marketing
+//community managers
+//dissenyadors
+//fotògrafs
+//filmmakers
 
 //aprenentatge
-  //intercanvi d'idiomes
-  //classes de cuina
-  //classes particulars
-  //música
-  //ball
+//intercanvi d'idiomes
+//classes de cuina
+//classes particulars
+//música
+//ball
 
 //mecànica
-  //cotxes i motos
-  //bicicletes i patinets
+//cotxes i motos
+//bicicletes i patinets
 
 //benestar i bellesa
-  //massatges
-  //tractaments facials
-  //perruqueria
-  //psicologia
-  //coaching
-  //dietista
-  //entrenador personal
+//massatges
+//tractaments facials
+//perruqueria
+//psicologia
+//coaching
+//dietista
+//entrenador personal
 
 //
 
 //Consultoria
-  //legal
-  //financera
-  //estratègica
-
+//legal
+//financera
+//estratègica
 
 //Altres
-  //passejador de gossos
-  //cangur
-  //fer la compra
+//passejador de gossos
+//cangur
+//fer la compra

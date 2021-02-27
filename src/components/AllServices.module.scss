@@ -1,0 +1,10 @@
+@import "./App.module.scss";
+
+.no_wrap{
+    display: flex;
+    flex-wrap: wrap;
+
+    &>*{
+        margin: 1rem;
+    }
+}
