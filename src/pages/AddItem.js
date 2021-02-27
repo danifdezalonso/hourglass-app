@@ -13,6 +13,7 @@ const AddItem = () => {
   const [loader, setLoader] = useState(false);
   const [url, setURL] = useState("");
   const [date, setDate] = useState("");
+  const [option, setOption] = useState("");
 
   function handleChange(e) {
     setImage(e.target.files[0]);
@@ -40,6 +41,7 @@ const AddItem = () => {
         description: description,
         location: location,
         date: date,
+        option: option,
       })
       .then(() => {
         setLoader(false);
@@ -100,7 +102,12 @@ const AddItem = () => {
               <div className={styles.card__section}>
                 <div className={styles.card__subtitle}>
                   Categoría
-                  <Select options={SERVEI_OPTIONS} required />
+                  <Select
+                    onChange={(option) => setOption(option)} //al fer clic es queda el seccioant marcat
+                    value={[option]}
+                    options={SERVEI_OPTIONS} //importa les opcions de l'arxiu
+                    required // és obligatori
+                  />
                 </div>
               </div>
               <div className={styles.card__section}>
