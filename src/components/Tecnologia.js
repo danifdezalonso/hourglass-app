@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Tecnologia.module.scss";
+import { db } from "../fire";
 import { Link } from "react-router-dom";
 const Tecnologia = () => {
   return (
@@ -19,6 +20,7 @@ const Tecnologia = () => {
         <h1 className={styles.filter__header}>Tecnologia</h1>
         <div className={styles.container}>
           <p>contingut aqui</p>
+          {/* <button onClick={mostrarServeis}>Click</button> */}
         </div>
       </div>
     </div>
