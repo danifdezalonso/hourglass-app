@@ -5,7 +5,7 @@
     padding: 2rem 0rem;
     margin-top: 16px;
     font-size: 14px;
-    color: $grayblue-color;
+    color: $gray-color-dark;
 
     &__llistes {
         display: flex;
@@ -18,8 +18,16 @@
             list-style-type: none;
             position: center;
             justify-content: center;
+&:first-child {
+    color: black;
+    font-weight: 600;
+}
+            
 
             li {
+&:first-child {
+    color: black;
+}
                 padding-bottom: 8%;
 
                 img {
