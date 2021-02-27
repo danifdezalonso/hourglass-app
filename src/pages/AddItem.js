@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./AddItem.module.scss";
-import Select from "react-select";
+// import Select from "react-select";
 import SERVEI_OPTIONS from "../components/Data/serveiOptions";
 import { Link } from "react-router-dom";
 import { db, storage } from "../fire";
