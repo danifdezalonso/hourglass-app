@@ -11,17 +11,33 @@ const AddItem = () => {
   const [location, setLocation] = useState("");
   const [image, setImage] = useState("");
   const [loader, setLoader] = useState(false);
+  const [url, setURL] = useState("");
+
+  function handleChange(e) {
+    setImage(e.target.files[0]);
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoader(true);
 
+    const uploadTask = storage.ref(`/images/${image.name}`).put(image);
+    uploadTask.on("state_changed", console.log, console.error, () => {
+      storage
+        .ref("images")
+        .child(image.name)
+        .getDownloadURL()
+        .then((url) => {
+          setImage(null);
+          setURL(url);
+        });
+    });
+
+    setLoader(true);
     db.collection("services")
       .add({
         title: title,
         description: description,
         location: location,
-        image: image,
       })
       .then(() => {
         setLoader(false);
@@ -88,8 +104,9 @@ const AddItem = () => {
                   id="image"
                   name="avatar"
                   accept="image/png, image/jpeg"
-                  value={image}
+                  onChange={handleChange}
                 />
+                <img src={url} alt="" />
               </div>
               <div className={styles.card__section}>
                 <div className={styles.card__subtitle}>Ubicació</div>
