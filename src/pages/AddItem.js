@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./AddItem.module.scss";
-// import Select from "react-select";
+import Select from "react-select";
 import SERVEI_OPTIONS from "../components/Data/serveiOptions";
 import { Link } from "react-router-dom";
 import { db, storage } from "../fire";
@@ -12,6 +12,7 @@ const AddItem = () => {
   const [image, setImage] = useState("");
   const [loader, setLoader] = useState(false);
   const [url, setURL] = useState("");
+  const [date, setDate] = useState("");
 
   function handleChange(e) {
     setImage(e.target.files[0]);
@@ -38,6 +39,7 @@ const AddItem = () => {
         title: title,
         description: description,
         location: location,
+        date: date,
       })
       .then(() => {
         setLoader(false);
@@ -70,11 +72,9 @@ const AddItem = () => {
 
           <div className={styles.card}>
             <form onSubmit={handleSubmit}>
-              {/* <div className={styles.card__section}>
+              <div className={styles.card__section}>
                 <div className={styles.card__title}>Quin servei pujaràs?</div>
-                <div className={styles.card__subtitle}>Categoría</div>
-                <Select options={SERVEI_OPTIONS} required />
-              </div> */}
+              </div>
               <div className={styles.card__section}>
                 <div className={styles.card__subtitle}>Títol</div>
                 <input
@@ -98,6 +98,12 @@ const AddItem = () => {
                 />
               </div>
               <div className={styles.card__section}>
+                <div className={styles.card__subtitle}>
+                  Categoría
+                  <Select options={SERVEI_OPTIONS} required />
+                </div>
+              </div>
+              <div className={styles.card__section}>
                 <div className={styles.card__subtitle}>Imatge</div>
                 <input
                   type="file"
@@ -105,8 +111,9 @@ const AddItem = () => {
                   name="avatar"
                   accept="image/png, image/jpeg"
                   onChange={handleChange}
+                  required
                 />
-                <img src={url} alt="" />
+                {/* <img src={url} alt="" /> */}
               </div>
               <div className={styles.card__section}>
                 <div className={styles.card__subtitle}>Ubicació</div>
@@ -116,6 +123,16 @@ const AddItem = () => {
                   value={location}
                   required
                   onChange={(e) => setLocation(e.target.value)}
+                />
+              </div>
+              <div className={styles.card__section}>
+                <div className={styles.card__subtitle}>Data</div>
+                <input
+                  className={styles.card__input__text}
+                  type="date"
+                  value={date}
+                  required
+                  onChange={(e) => setDate(e.target.value)}
                 />
               </div>
               <div className={styles.card__section}>

@@ -54,12 +54,12 @@ const ServeiDetall = (props) => {
             </span>
             {props.categoria}
           </div>
-          <div className={styles.box__details__etiquetes}>
+          {/* <div className={styles.box__details__etiquetes}>
             <span className={styles.box__details__etiquetes__etiqueta}>
               Etiquetes
             </span>
             {props.tags}
-          </div>
+          </div> */}
           <div className={styles.box__details__description}>
             {props.description}
           </div>
