@@ -4,21 +4,25 @@ import Login from "../components/Login.js";
 import Dashboard from "../pages/Dashboard";
 
 const SignUpLogin = () => {
+  const [name, setName] = useState("");
   const [user, setUser] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
+  const [nameError, setNameError] = useState("");
   const [hasAccount, setHasHaccount] = useState(false);
 
   const clearInputs = () => {
     setEmail("");
     setPassword("");
+    setName("");
   };
 
   const clearErrors = () => {
     setEmailError("");
     setPasswordError("");
+    setNameError("");
   };
 
   const handleLogin = () => {
@@ -97,6 +101,8 @@ const SignUpLogin = () => {
             setHasHaccount={setHasHaccount}
             emailError={emailError}
             passwordError={passwordError}
+            name={name}
+            setName={setName}
           />
         </>
       )}

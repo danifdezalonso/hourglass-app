@@ -4,6 +4,7 @@ import Select from "react-select";
 import SERVEI_OPTIONS from "../components/Data/serveiOptions";
 import { Link } from "react-router-dom";
 import { db, storage } from "../fire";
+import ButtonNavBar from "../components/Buttons/ButtonNavBar";
 
 const AddItem = () => {
   const [title, setTitle] = useState("");
@@ -143,12 +144,15 @@ const AddItem = () => {
                 />
               </div>
               <div className={styles.card__section}>
-                <button
+                <div className={styles.card__section__button}>
+                  <ButtonNavBar text="Afegir servir" type="submit" />
+                </div>
+                {/* <button
                   type="submit"
                   style={{ background: loader ? "#B34180" : "#a2035b" }}
                 >
                   Afegir
-                </button>
+                </button> */}
               </div>
             </form>
           </div>

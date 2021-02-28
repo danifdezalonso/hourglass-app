@@ -10,6 +10,17 @@
   margin-right: auto;
   margin-left: auto;
 
+  &__section__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    
+    button{
+      width: 100%;
+    }
+  }
+
   &__title {
     font-size: 1.5rem;
   }
@@ -30,6 +41,7 @@
     margin-top: 1rem;
   }
   &__input__text {
+    z-index: 1;
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;

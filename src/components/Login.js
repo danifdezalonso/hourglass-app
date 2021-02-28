@@ -14,6 +14,8 @@ const Login = (props) => {
     setHasHaccount,
     emailError,
     passwordError,
+    name,
+    setName,
   } = props;
 
   return (
@@ -31,10 +33,20 @@ const Login = (props) => {
             Registra't o inicia sessió
           </div>
           <div className={styles.card__email}>
-            <label>E-mail:</label>
+            <label>El teu usuari:</label>
             <input
               type="text"
               autoFocus
+              required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <p> {emailError} </p>
+          </div>
+          <div className={styles.card__email}>
+            <label>E-mail:</label>
+            <input
+              type="text"
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
