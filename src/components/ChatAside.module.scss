@@ -7,6 +7,10 @@
         flex-direction: column;
         border: 1px solid #eceff1;
         position: static;
+            :hover {
+                background-color: #eceff1;
+                    cursor: pointer;
+            }
 
 
 }
@@ -14,5 +18,7 @@
 @media screen and (max-width: 600px) {
 .chat__layout__leftside__chatContainer {
     display: none;
+
+    
 }
 }

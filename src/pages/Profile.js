@@ -18,8 +18,15 @@ const Profile = ({ handleLogout, user }) => {
               </Link>
             </ul>
           </div>
+
+          <h1>El meu perfil</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
+            unde sequi animi deleniti suscipit, voluptates est libero minus ad,
+            adipisci, quasi illo autem molestiae necessitatibus ea debitis
+            corrupti consequuntur mollitia.
+          </p>
         </div>
-        <h1>El meu perfil</h1>
 
         {/* contingut aqui */}
       </div>
