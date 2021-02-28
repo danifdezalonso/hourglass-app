@@ -8,18 +8,20 @@
     padding: 1rem;
 }
 .message__user{
-    color:white;
+    color:#B34180;
     margin-left: auto;
     text-align: left;
 }
 
 .message__userCard{
-    background-color: red;
+    border-radius: 20px;
+    border: 1px solid #B34180;
 
 }
 
 .message__guestCard{
-    background-color: yellow;
+    background-color: #eceff1;
+    border-radius: 20px;
 }
 
 .message__userName {

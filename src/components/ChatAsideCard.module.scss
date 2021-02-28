@@ -1,0 +1,45 @@
+@import "../components/App.module.scss";
+
+.chat__layout__leftside__chatContainer__miniCard {
+    display: flex;
+    font-size: 1rem;
+    border: 1px solid #eceff1;
+    padding: 1rem;
+
+
+    &__img {
+
+        img {
+            width: 42px;
+            height: 42px;
+            border-radius: 4px;
+        }
+    }
+
+    &__description {
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__user {
+            font-size: 0.875rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 160px;
+
+        }
+
+        &__service {
+            font-size: 1.25rem;
+            font-weight: 600;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            flex-grow: 1;
+            width: 160px;
+
+        }
+    }
+}

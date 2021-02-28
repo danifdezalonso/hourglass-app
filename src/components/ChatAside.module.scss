@@ -1,0 +1,18 @@
+@import "../components/App.module.scss";
+.chat__layout__leftside__chatContainer {
+    font-size: 1rem;
+        overflow-y: scroll;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #eceff1;
+        position: static;
+
+
+}
+
+@media screen and (max-width: 600px) {
+.chat__layout__leftside__chatContainer {
+    display: none;
+}
+}
