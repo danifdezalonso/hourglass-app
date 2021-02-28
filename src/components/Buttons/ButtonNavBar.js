@@ -4,7 +4,7 @@ import IconPlus from "./ButtonIcons/IconPlus.js";
 
 const ButtonNavBar = (props) => {
   return (
-    <button className="button--navbar">
+    <button className="button--navbar" onClick={props.event}>
       <span className={styles.button__icon}>
         <IconPlus />
       </span>

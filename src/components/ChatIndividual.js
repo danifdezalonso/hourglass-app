@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "./ChatIndividual.module.scss";
 import Message from "./Message.js";
 import { db } from "../fire";
 import firebase from "firebase";
+import stylesButton from "../components/Buttons/ButtonNavBar.module.scss";
+import IconSend from "./Buttons/ButtonIcons/IconSend";
 
 const Chat = () => {
   const [input, setInput] = useState("");
@@ -31,28 +33,43 @@ const Chat = () => {
     setInput("");
   };
 
+  const AlwaysScrollToBottom = () => {
+    const elementRef = useRef();
+    useEffect(() => elementRef.current.scrollIntoView());
+    return <div ref={elementRef} />;
+  };
+
   return (
     <>
       {/* contingut aqui */}
-      <h1>Hola {username}</h1>
-
-      {messages.map((message) => (
-        <div className={styles.container}>
-          <Message username={username} message={message} />
-        </div>
-      ))}
+      {/* <h1>Hola {username}</h1> */}
       <div className={styles.container}>
-        <form onSubmit={sendMessage}>
-          <input
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            type="text"
-            placeholder="Envia missatge..."
-          />
-          <button disabled={!input} onClick={sendMessage}>
-            Enviar missatge
+        <div className={styles.chat__scroll}>
+          <ul>
+            {messages.map((message) => (
+              <li>
+                <Message username={username} message={message} />
+              </li>
+            ))}
+            <AlwaysScrollToBottom />
+          </ul>
+        </div>
+        <div className={styles.chat__button}>
+          <form onSubmit={sendMessage}>
+            <input
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              type="text"
+              placeholder="Envia missatge..."
+            />
+          </form>
+          <button className="button--navbar" onClick={sendMessage}>
+            <span className={stylesButton.button__icon}>
+              <IconSend />
+            </span>
+            <span className={stylesButton.button__text}>Enviar</span>
           </button>
-        </form>
+        </div>
       </div>
     </>
   );

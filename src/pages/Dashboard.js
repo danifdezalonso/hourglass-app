@@ -65,7 +65,6 @@ const Dashboard = ({ handleLogout, user }) => {
             <Route exact path="/passejar-gossos" component={Gossos} />
             <Route exact path="/cangur" component={Cangur} />
             <Route exact path="/compra" component={Compra} />
-
             <Route component={Page404} />
           </Switch>
           <Footer />
