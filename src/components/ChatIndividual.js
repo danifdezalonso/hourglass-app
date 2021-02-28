@@ -1,15 +1,23 @@
 import React, { useState, useEffect } from "react";
 import styles from "./ChatIndividual.module.scss";
 import Message from "./Message.js";
+import { db } from "../fire";
+import firebase from "firebase";
 
 const Chat = () => {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([
-    { username: "Dani", message: "Bon dia Ester" },
-    { username: "Dani", message: "Com estàs?" },
-    { username: "Dani", message: "Quan acabem això ens fotem 40 birres, oi?" },
+    // { username: "Dani", message: "Bon dia Ester" },
+    // { username: "Dani", message: "Com estàs?" },
+    // { username: "Dani", message: "Quan acabem això ens fotem 40 birres, oi?" },
   ]);
   const [username, setUsername] = useState("");
+
+  useEffect(() => {
+    db.collection("messages").onSnapshot((snapshot) =>
+      setMessages(snapshot.docs.map((doc) => doc.data()))
+    );
+  }, []);
 
   useEffect(() => {
     setUsername(prompt("Com et dius?"));
@@ -17,7 +25,11 @@ const Chat = () => {
 
   const sendMessage = (e) => {
     e.preventDefault();
-    setMessages([...messages, { username: username, message: input }]);
+    db.collection("messages").add({
+      message: input,
+      username: username,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+    });
     setInput("");
   };
 
