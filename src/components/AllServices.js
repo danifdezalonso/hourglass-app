@@ -1,12 +1,8 @@
 import React from "react";
 import styles from "./AllServices.module.scss";
-import ServeiPrincipal from "../components/ServeiPrincipal";
-import IconAprenentatge from "../images/ServeisPrincipals/category_aprenentatge.svg";
-import IconInformatica from "../images/ServeisPrincipals/category_informatica3.svg";
-import IconMecanic from "../images/ServeisPrincipals/category_mechanics2.svg";
-import IconLlar from "../images/ServeisPrincipals/category_llar3.svg";
-import IconSpa from "../images/ServeisPrincipals/category_benestar.svg";
-import IconConsultoria from "../images/ServeisPrincipals/category_consultoria.svg";
+import Image1 from "../images/Serveis/actor.jpg";
+import Image2 from "../images/Serveis/agent inmobiliari.jpg";
+import Servei from "./Servei.js";
 import { Link } from "react-router-dom";
 
 const AllServices = () => {
@@ -21,56 +17,28 @@ const AllServices = () => {
                 <li>Home</li>
               </Link>
               <Link to={window.location.pathname}>
-                <li>Tots els serveis</li>
+                <li>Altres Serveis</li>
               </Link>
             </ul>
           </div>
-          <h1 className={styles.filter__header}>Tots els serveis</h1>
-          <div className={styles.container}>
-            <div className={styles.no_wrap}>
-              <Link to="/llar">
-                <ServeiPrincipal
-                  image={IconLlar}
-                  imageAlt="Icona de llar"
-                  description="Llar"
-                />
-              </Link>
-              <Link to="/tecnologia">
-                <ServeiPrincipal
-                  image={IconInformatica}
-                  imageAlt="Icona d'Informàtica"
-                  description="Tecnologia"
-                />
-              </Link>
-              <Link to="/aprenentatge">
-                <ServeiPrincipal
-                  image={IconAprenentatge}
-                  imageAlt="Icona d'Informàtica"
-                  description="Aprenentatge"
-                />
-              </Link>
-              <Link to="/benestar">
-                <ServeiPrincipal
-                  image={IconSpa}
-                  imageAlt="Icona Spa"
-                  description="Benestar"
-                />
-              </Link>
-              <Link to="/mecanica">
-                <ServeiPrincipal
-                  image={IconMecanic}
-                  imageAlt="Icona de Mecànica"
-                  description="Mecànica"
-                />
-              </Link>
-              <Link to="/consultoria">
-                <ServeiPrincipal
-                  image={IconConsultoria}
-                  imageAlt="Icona de consultoria"
-                  description="Consultoria"
-                />
-              </Link>
-            </div>
+          <h1 className={styles.filter__header}>Altres Serveis</h1>
+          <div className={styles.containerFlex}>
+          <Link to="/ServiceDetail">
+            <Servei
+              title="Actor"
+              description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, doloremque nobis, quae necessitatibus dolorem quas illo non minima possimus quibusdam repellendus deserunt odit explicabo."
+              image={Image1}
+              imageAlt="Descripció imatge 1"
+            />
+            </Link>
+            <Link to="/ServiceDetail">
+            <Servei
+              title="Agent Inmobiliari"
+              description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, doloremque nobis, quae necessitatibus dolorem quas illo non minima possimus quibusdam repellendus deserunt odit explicabo."
+              image={Image2}
+              imageAlt="Descripció imatge 1"
+            />
+            </Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./Lampistes.module.scss";
+import styles from "./Disseny.module.scss";
 
 const Lampistes = () => {
   return (

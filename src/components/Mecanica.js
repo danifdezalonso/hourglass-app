@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Mecanica.module.scss";
+import styles from "./Disseny.module.scss";
 import { Link } from "react-router-dom";
 
 const Mecanica = () => {

@@ -1,54 +1,46 @@
 const serveiOptions = [
   // LLAR
   { value: "neteja", label: "Tasques de neteja" },
-  { value: "electricista", label: "Electricista" },
-  { value: "jardiner", label: "Jardiner" },
-  { value: "neteja", label: "Tasques de neteja" },
-  { value: "lampista", label: "Lampista" },
-  { value: "fuster", label: "Fuster" },
-  { value: "interiorista", label: "Interiorista" },
-  { value: "mobles", label: "Muntador de mobles" },
-  { value: "pintor", label: "Pintor" },
+  { value: "electricista", label: "Electricistes" },
+  { value: "jardiner", label: "Jardiners" },
+  { value: "lampista", label: "Lampistes" },
+  { value: "pintor", label: "Pintors" },
   { value: "mudances", label: "Mudances" },
 
 // TECNOLOGIA
-  { value: "infromatic", label: "Informàtic" },
-  { value: "webs", label: "Webs i Apps" },
+  { value: "informatic", label: "Informàtics" },
+  { value: "disseny", label: "Disseny i Programació" },
   { value: "publicitat", label: "Publicitat i Màrketing" },
-  { value: "dissenyador", label: "Dissenyador" },
-  { value: "fotograf", label: "Fotògraf" },
-  { value: "filmmaker", label: "Filmmaker" },
+  { value: "fotografia ", label: "Fotografia i Video" },
 
 // APRENENTATGE
   { value: "idiomes", label: "Intercanvi d'idiomes" },
   { value: "cuina", label: "Classes de cuina" },
   { value: "particulars", label: "Classes particulars" },
-  { value: "musica", label: "Classes de música" },
-  { value: "ball", label: "Classes de ball" },
+  { value: "musica", label: "Classes de música i ball" },
 
 // BENESTAR I BELLESA
   { value: "massatges", label: "Massatges" },
-  { value: "facial", label: "tractaments facials i corporals" },
-  { value: "perruqueria", label: "Perruqueria" },
+  { value: "facial", label: "Tractaments facials i corporals" },
+  { value: "perruqueria", label: "Perruquers" },
   { value: "psicologia", label: "Psicologia" },
-  { value: "coaching", label: "Coaching" },
-  { value: "dietista", label: "Dietista" },
-  { value: "entrenador", label: "Entrenador personal" },
+  { value: "dietista", label: "Dietistes" },
+  { value: "entrenador", label: "Entrenadors personals" },
+  { value: "terapies", label: "Terapies Alternatives" },
 
 // CONSULTORIA
-  { value: "legal", label: "Consultoria legal" },
-  { value: "financera", label: "Consultoria financera" },
-  { value: "estrategica", label: "Consultoria estratègica" },
+  { value: "consultoria", label: "Consultoria" },
 
 // ALTRES
-{ value: "gossos", label: "Passejador de gossos" },
-{ value: "cangur", label: "Cangur" },
-{ value: "compra", label: "Fer la compra" },
-{ value: "mecanic", label: "Mecànic" },
+{ value: "gossos", label: "Passejadors de gossos" },
+{ value: "cangur", label: "Cangurs" },
+{ value: "mecanic", label: "Mecànics" },
 
 { value: "altres", label: "Altres" },
 ,
 ];
+
+//25 categories
 
 export default serveiOptions;
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./Informatica.module.scss";
+import styles from "./Disseny.module.scss";
 const Informatica = () => {
   return (
     <div className={styles.containerFluid}>

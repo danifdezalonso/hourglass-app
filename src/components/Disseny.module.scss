@@ -1,0 +1,8 @@
+@import "./App.module.scss";
+
+.containerFlex{
+    display:flex;
+    justify-content: center;
+    max-width:1000px;
+    flex-wrap:wrap;
+}

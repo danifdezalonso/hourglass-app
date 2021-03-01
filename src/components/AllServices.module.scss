@@ -1,10 +1,9 @@
 @import "./App.module.scss";
 
-.no_wrap{
-    display: flex;
-    flex-wrap: wrap;
-
-    &>*{
-        margin: 1rem;
-    }
+.containerFlex{
+    display:flex;
+    justify-content: center;
+    max-width:1000px;
+    flex-wrap:wrap;
 }
+

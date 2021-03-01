@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./Electricistes.module.scss";
+import styles from "./Disseny.module.scss";
 
 const Electricistes = () => {
   return (
@@ -13,7 +13,7 @@ const Electricistes = () => {
               <li>Home</li>
             </Link>
             <Link to={window.location.pathname}>
-              <li>Profile</li>
+              <li>Electricistes</li>
             </Link>
           </ul>
         </div>

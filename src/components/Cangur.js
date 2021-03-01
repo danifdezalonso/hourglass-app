@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./Cangur.module.scss";
+import styles from "./Disseny.module.scss";
 
 const Cangur = () => {
   return (
@@ -13,11 +13,11 @@ const Cangur = () => {
               <li>Home</li>
             </Link>
             <Link to={window.location.pathname}>
-              <li>Cangur</li>
+              <li>Cangurs</li>
             </Link>
           </ul>
         </div>
-        <h1 className={styles.filter__header}>Cangur</h1>
+        <h1 className={styles.filter__header}>Cangurs</h1>
         <div className={styles.container}>
           <p>contingut aqui</p>
         </div>
