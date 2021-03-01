@@ -6,82 +6,81 @@
     border-radius: 0.75rem;
     padding: 1rem;
     margin: 1rem 0.5rem 1rem 0.5rem;
-    width: 220px;
-
-    &__title{
-        font-size: 1.25rem;
-        text-decoration: none;
-        font-weight: 600;
-        color: $text-color-black;
-    }
-
-    &__description {
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 100%;
-        font-size: 1rem;
-        text-decoration: none;
-        max-width: 300px;
-        font-weight: 400;
-        margin-top: 8px;
-        margin-bottom: 16px;
-        color: $text-color-black;
-    }
+    display:flex;
 
     &__image > img{
-        width: 220px;
+        width: 200px;
         height: 125px;
         object-fit: cover;
         border-radius: 0.25rem;
     }
-    &__icon{
 
-        &__icon{
-            width:42px;
-            margin-top:8px;
+
+    &__text {
+        padding-left:18px;
+
+
+        &__upper{
+            display:flex;
+            justify-content:space-between;
+
+            &__heart{
+                width:22.5px;
+                height:22.5px;
+            }
+
+            &__title{
+                font-size: 1.25rem;
+                text-decoration: none;
+                font-weight: 600;
+                color: $text-color-black;
+            }
         }
-    }
-    
-    &__button {
-        margin-top: 8px;
-        margin-left: 0rem;
-        border-radius: 0.5rem;
-        width: 70%;
+
+        &__description {
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+            font-size: 1rem;
+            text-decoration: none;
+            max-width: 230px;
+            font-weight: 400;
+            margin-top: 16px;
+            color: $text-color-black;
+        }
+
     }
 }
 
 @media screen and (max-width: 600px) {
     .box{
-        padding: 0.6rem;
-        margin: 0.4rem;
-        width:130px;
+        margin: 0.5rem 0.3rem 0.5rem 0.3rem;
     
-        &__title{
-            font-size: 16px; 
-        }
-    
-        &__description {
-            font-size: 13px; //footer
-            margin: 0.6rem 0rem 0.6rem 0rem;
-        }
         &__image > img{
-            width: 130px;
-            height:80px;
+            width: 170px;
+            height: 135px;
         }
-        &__icon{
-
-            &__icon{
-                width:21px;
-                margin-top:8px;
-                display:none;
+    
+        &__text {
+            padding-left:16px;
+    
+            &__upper{
+    
+                &__heart{
+                    margin-left:4px;
+                }
+    
+                &__title{
+                    font-size: 1.1rem;
+                }
             }
-        }
-        
-        &__button {
-            display:none;
+    
+            &__description {
+            }
+    
         }
     }
 }

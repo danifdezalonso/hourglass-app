@@ -1,17 +1,16 @@
 @import "./App.module.scss";
 
 .box{
+    padding:16px 0;
     background-color: $white-color;
     // border: 1px black solid;
     width: 150px;
-    height: 150px;
     border-radius: 0.5rem;
     min-width: 150px;
 
     &__image{
         width: 48px;
         height: 48px;
-        margin-top: 27px;
         margin-left: 51px;
     }
     &__text{
@@ -22,8 +21,8 @@
         margin-top: 8px;   
         margin-left: auto;
         margin-right: auto;
-        max-width: 75px;
-        // color:$gray-color-dark;
+        max-width: 105px;
+        color:$text-color-black;
     }
 
     &:hover{
@@ -36,28 +35,24 @@
 @media screen and (max-width: 600px) {
     .box{
         width: 50px;
-        height: 90px;
         min-width: 100px;
 
     &__image{
-        width: 32px;
-        height: 32px;
+        width: 48px;
+        height: 48px;
         margin-top: 0;
         margin-left:auto;
         margin-right:auto;
     }
     &__text{
-        font-size: 0.8rem;
-        font-weight: 600;
+        font-size:0.9em;
         justify-content: center;
         text-align: center; 
-        margin-top: 12px;   
-        
         max-width: 75px;
     }
 }
 img{
-    width: 32px;
-    height: 32px;
+    width: 42px;
+    height: 42px;
 }
 }

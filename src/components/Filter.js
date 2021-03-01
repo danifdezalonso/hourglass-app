@@ -45,7 +45,7 @@ const Filter = () => {
           <ServeiPrincipal
             image={IconAprenentatge}
             imageAlt="Icona d'Informàtica"
-            description="Aprenentatge"
+            description="Aprendre"
           />
         </Link>
         <Link to="/benestar">
