@@ -17,6 +17,7 @@ const All = () => {
             title: doc.data().title,
             description: doc.data().description,
             image: doc.data().url,
+            option: doc.data().option.label,
           }))
         );
       });
