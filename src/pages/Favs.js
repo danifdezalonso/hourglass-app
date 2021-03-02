@@ -45,7 +45,7 @@ const Favs = () => {
         </Link>
         <Link to="/ServiceDetail">
           <Servei
-            title="Professor particular"
+            title="Actor"
             description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, doloremque nobis, quae necessitatibus dolorem quas illo non minima possimus quibusdam repellendus deserunt odit explicabo."
             image={Image3}
             imageAlt="Descripció imatge 1"
@@ -53,7 +53,7 @@ const Favs = () => {
         </Link>
         <Link to="/ServiceDetail">
           <Servei
-            title="Professor particular"
+            title="Agent inmmobiliària titulada"
             description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, doloremque nobis, quae necessitatibus dolorem quas illo non minima possimus quibusdam repellendus deserunt odit explicabo."
             image={Image4}
             imageAlt="Descripció imatge 1"

@@ -9,8 +9,8 @@
     display:flex;
 
     &__image > img{
-        width: 200px;
-        height: 125px;
+        width: 160px;
+        height: 138px;
         object-fit: cover;
         border-radius: 0.25rem;
     }
@@ -27,6 +27,7 @@
             &__heart{
                 width:22.5px;
                 height:22.5px;
+                margin-left:8px;
             }
 
             &__title{
@@ -34,6 +35,8 @@
                 text-decoration: none;
                 font-weight: 600;
                 color: $text-color-black;
+                max-width:200px;
+                line-height:1.3em;
             }
         }
 
@@ -43,13 +46,12 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
-            max-width: 100%;
+            max-width: 250px;
             font-size: 1rem;
             text-decoration: none;
-            max-width: 230px;
             font-weight: 400;
-            margin-top: 16px;
             color: $text-color-black;
+            margin-top:5%;
         }
 
     }
@@ -60,8 +62,8 @@
         margin: 0.5rem 0.3rem 0.5rem 0.3rem;
     
         &__image > img{
-            width: 170px;
-            height: 135px;
+            width: 140px;
+            height: 140px;
         }
     
         &__text {
@@ -70,11 +72,11 @@
             &__upper{
     
                 &__heart{
-                    margin-left:4px;
                 }
     
                 &__title{
                     font-size: 1.1rem;
+                    line-height:1.2em;
                 }
             }
     
