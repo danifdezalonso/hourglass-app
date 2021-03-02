@@ -17,7 +17,6 @@ const Highlights2 = (props) => {
           <Link to="/informatica">
             <Categoria2
               title="Informàtica"
-              description="28 serveis"
               image={Informatica}
               imageAlt="Descripció imatge 1"
             />
@@ -25,7 +24,6 @@ const Highlights2 = (props) => {
           <Link to="/disseny">
             <Categoria2
               title="Dissenyadors i Programadors"
-              description="36 serveis"
               image={Web}
               imageAlt="Descripció imatge 1"
             />
@@ -33,7 +31,6 @@ const Highlights2 = (props) => {
           <Link to="/publicitat-marqueting">
             <Categoria2
               title="Publicitat i Màrqueting"
-              description="21 serveis"
               image={Publi}
               imageAlt="Descripció imatge 1"
             />
@@ -41,7 +38,6 @@ const Highlights2 = (props) => {
           <Link to="/fotografia-video">
             <Categoria2
               title="Fotografia i Video"
-              description="21 serveis"
               image={Foto}
               imageAlt="Descripció imatge 1"
             />

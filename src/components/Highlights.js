@@ -17,7 +17,6 @@ const Highlights = (props) => {
           <Link to="/tasquesNeteja">
             <Categoria
               title="Tasques de neteja"
-              description="55 serveis"
               image={Neteja}
               imageAlt="Descripció imatge 1"
             />
@@ -25,7 +24,6 @@ const Highlights = (props) => {
           <Link to="/electricistes">
             <Categoria
               title="Electricistes"
-              description="36 serveis"
               image={Electricista}
               imageAlt="Descripció imatge 1"
             />
@@ -33,7 +31,6 @@ const Highlights = (props) => {
           <Link to="/jardineria">
             <Categoria
               title="Jardineria"
-              description="30 serveis"
               image={Jardineria}
               imageAlt="Descripció imatge 1"
             />
@@ -41,7 +38,6 @@ const Highlights = (props) => {
           <Link to="/lampistes">
             <Categoria
               title="Lampistes"
-              description="45 serveis"
               image={Lampista}
               imageAlt="Descripció imatge 1"
             />

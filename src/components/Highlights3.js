@@ -16,7 +16,6 @@ const Highlights3 = (props) => {
           <Link to="/passejar-gossos">
             <Categoria3
               title="Passejadors de gossos"
-              description="55 serveis"
               image={Passejador}
               imageAlt="Descripció imatge 1"
             />
@@ -24,7 +23,6 @@ const Highlights3 = (props) => {
           <Link to="/cangur">
             <Categoria3
               title="Cangurs"
-              description="21 serveis"
               image={Cangur}
               imageAlt="Descripció imatge 1"
             />
@@ -32,7 +30,6 @@ const Highlights3 = (props) => {
           <Link to="/consultoria">
             <Categoria3
               title="Consultoria"
-              description="16 serveis"
               image={Consultoria}
               imageAlt="Descripció imatge 1"
             />
