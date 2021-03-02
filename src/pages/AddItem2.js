@@ -50,6 +50,10 @@ const AddItem2 = () => {
               });
           })
       );
+
+    setTitle("");
+    setDescription("");
+    setLocation("");
   };
   return (
     <>
@@ -137,7 +141,7 @@ const AddItem2 = () => {
               </div>
               <div className={styles.card__section}>
                 <div className={styles.card__section__button}>
-                  <ButtonNavBar text="Afegir servir" type="submit" />
+                  <ButtonNavBar text="Afegir servei" type="submit" />
                 </div>
                 {/* <button
                   type="submit"
