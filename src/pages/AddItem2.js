@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import styles from "./AddItem.module.scss";
+import ButtonNavBar from "../components/Buttons/ButtonNavBar";
+import { db, storage } from "../fire";
 import Select from "react-select";
 import SERVEI_OPTIONS from "../components/Data/serveiOptions";
 import { Link } from "react-router-dom";
-import { db, storage } from "../fire";
-import ButtonNavBar from "../components/Buttons/ButtonNavBar";
 
-const AddItem = () => {
+const AddItem2 = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [location, setLocation] = useState("");
@@ -21,41 +21,36 @@ const AddItem = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    const uploadTask = storage.ref(`/images/${image.name}`).put(image);
-    uploadTask.on("state_changed", console.log, console.error, () => {
-      storage
-        .ref("images")
-        .child(image.name)
-        .getDownloadURL()
-        .then((url) => {
-          setImage(null);
-          setURL(url);
-        });
-    });
-
-    db.collection("services")
-      .add({
-        // title: title,
-        // description: description,
-        // location: location,
-        // date: date,
-        // option: option,
-        // url: "url",
-      })
-      .then(() => {
-        alert("El teu servei s'ha pujat! 👍");
-        // console.log(url);
-      })
-      .catch((error) => {
-        alert(error.message);
-      });
-
-    setTitle("");
-    setDescription("");
-    setLocation("");
+    console.log("entra a la funció");
+    storage
+      .ref(`/images/${image.name}`)
+      .put(image)
+      .then(() =>
+        storage
+          .ref(`/images/${image.name}`)
+          .getDownloadURL()
+          .then((url) => {
+            setImage(null);
+            setURL(url);
+            db.collection("services")
+              .add({
+                title: title,
+                description: description,
+                location: location,
+                date: date,
+                option: option,
+                url: url,
+              })
+              .then(() => {
+                alert("El teu servei s'ha pujat! 👍");
+                // console.log(url);
+              })
+              .catch((error) => {
+                alert(error.message);
+              });
+          })
+      );
   };
-
   return (
     <>
       <div className={styles.containerFluid}>
@@ -117,7 +112,6 @@ const AddItem = () => {
                   name="avatar"
                   accept="image/png, image/jpeg"
                   onChange={handleChange}
-                  value={image}
                   required
                 />
               </div>
@@ -160,4 +154,4 @@ const AddItem = () => {
   );
 };
 
-export default AddItem;
+export default AddItem2;

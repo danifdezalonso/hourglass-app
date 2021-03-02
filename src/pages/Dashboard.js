@@ -5,7 +5,7 @@ import Home from "../pages/Home.js";
 import Chat from "../pages/Chat.js";
 import Profile from "../pages/Profile.js";
 import Favs from "../pages/Favs.js";
-import AddItem from "../pages/AddItem.js";
+import AddItem from "../pages/AddItem2.js";
 import Page404 from "../pages/Page404.js";
 import Servei from "../pages/ServiceDetail.js";
 
@@ -22,23 +22,20 @@ import Disseny from "../components/Disseny";
 import PublicitatMarqueting from "../components/PublicitatMarqueting";
 import Gossos from "../components/Gossos";
 import Cangur from "../components/Cangur";
-import Pintors from  "../components/Pintors";
-import Mudances from  "../components/Mudances";
-import FotoVideo from  "../components/FotoVideo";
-import Idiomes from  "../components/IntercanviIdiomes";
-import Cuina from  "../components/ClassesCuina";
-import Particulars from  "../components/ClassesParticulars";
-import MusicaBall from  "../components/ClassesMusicaBall";
-import Massatges from  "../components/Massatges";
-import Tractaments from  "../components/TractamentsCorporals";
-import Perruquers from  "../components/Perruquers";
-import Psicologia from  "../components/Psicologia";
-import Dietistes from  "../components/Dietistes";
-import Entrenadors from  "../components/EntrenadorsPersonals";
-import Terapies from  "../components/TerapiesAlternatives";
-
-
-
+import Pintors from "../components/Pintors";
+import Mudances from "../components/Mudances";
+import FotoVideo from "../components/FotoVideo";
+import Idiomes from "../components/IntercanviIdiomes";
+import Cuina from "../components/ClassesCuina";
+import Particulars from "../components/ClassesParticulars";
+import MusicaBall from "../components/ClassesMusicaBall";
+import Massatges from "../components/Massatges";
+import Tractaments from "../components/TractamentsCorporals";
+import Perruquers from "../components/Perruquers";
+import Psicologia from "../components/Psicologia";
+import Dietistes from "../components/Dietistes";
+import Entrenadors from "../components/EntrenadorsPersonals";
+import Terapies from "../components/TerapiesAlternatives";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -80,11 +77,19 @@ const Dashboard = ({ handleLogout, user }) => {
             <Route exact path="/classes-musica-ball" component={MusicaBall} />
 
             <Route exact path="/massatges" component={Massatges} />
-            <Route exact path="/tractaments-corporals" component={Tractaments} />
+            <Route
+              exact
+              path="/tractaments-corporals"
+              component={Tractaments}
+            />
             <Route exact path="/perruquers" component={Perruquers} />
             <Route exact path="/psicologia" component={Psicologia} />
             <Route exact path="/dietistes" component={Dietistes} />
-            <Route exact path="/entrenadors-personals" component={Entrenadors} />
+            <Route
+              exact
+              path="/entrenadors-personals"
+              component={Entrenadors}
+            />
             <Route exact path="/terapies-alternatives" component={Terapies} />
 
             <Route exact path="/consultoria" component={Consultoria} />

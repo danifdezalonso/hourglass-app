@@ -10,9 +10,10 @@ const PublicitatMarqueting = () => {
 
   useEffect(() => {
     db.collection("services")
-      // .where("option.value", == "publicitat")
-      .orderBy("date", "asc")
-      .onSnapshot((snapshot) => {
+      .where("option.value", "==", "publicitat")
+      .get()
+      // .orderBy("date", "asc")
+      .then((snapshot) => {
         setServices(
           snapshot.docs.map((doc) => ({
             id: doc.id,
