@@ -5,7 +5,7 @@
     background-color:$background-color;
     border-radius: 0.75rem;
     padding: 1rem;
-    margin: 1rem 0.5rem 1rem 0.5rem;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
     display:flex;
     width:450px;
     font-size:1rem;
@@ -31,7 +31,6 @@
                 text-decoration: none;
                 font-weight: 600;
                 color: $text-color-black;
-                max-width:200px;
                 line-height:1.3em;
             }
         }
@@ -52,7 +51,7 @@
         &__option{
             text-decoration:none;
             color:$gray-color-dark;
-            margin-top:0.5rem;
+            margin-top:0.7rem;
             font-weight:600;
 
         }
@@ -62,7 +61,7 @@
 
 @media screen and (max-width: 600px) {
     .box{
-        margin: 0.5rem 0rem 0.5rem 0rem;
+        margin: 0.3rem 0rem 0.3rem 0rem;
         width:375px;
     
         &__image > img{
@@ -79,6 +78,14 @@
                     font-size: 1.1rem;
                     line-height:1.2em;
                 }
+            }
+            &__description {
+                margin-top:0.6rem;
+            }
+    
+            &__option{
+                margin-top:0.55rem;
+    
             }
         }
     }

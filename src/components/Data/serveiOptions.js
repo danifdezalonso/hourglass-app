@@ -7,7 +7,7 @@ const serveiOptions = [
   { value: "electricista", label: "Electricistes" },
   { value: "entrenador", label: "Entrenadors personals" },
   { value: "facial", label: "Tractaments facials i corporals" },
-  { value: "fotografia ", label: "Fotografia i Video" },
+  { value: "fotografia", label: "Fotografia i Video" },
   { value: "gossos", label: "Passejadors de gossos" },
   { value: "idiomes", label: "Intercanvi d'idiomes" },
   { value: "informatic", label: "Informàtics" },
