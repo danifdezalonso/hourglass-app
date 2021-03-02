@@ -8,10 +8,11 @@
     margin: 1rem 0.5rem 1rem 0.5rem;
     display:flex;
     width:450px;
+    font-size:1rem;
 
     &__image > img{
         width: 160px;
-        height: 138px;
+        height: 170px;
         object-fit: cover;
         border-radius: 0.25rem;
     }
@@ -66,7 +67,7 @@
     
         &__image > img{
             width: 140px;
-            height: 140px;
+            height: 155px;
         }
     
         &__text {

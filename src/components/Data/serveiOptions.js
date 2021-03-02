@@ -28,4 +28,3 @@ const serveiOptions = [
 ];
 
 export default serveiOptions;
-

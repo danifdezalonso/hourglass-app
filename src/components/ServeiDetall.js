@@ -13,8 +13,8 @@ const ServeiDetall = (props) => {
             <Link to="/">
               <li>Home</li>
             </Link>
-            <Link to="/aprenentatge">
-              <li>Aprenentatge</li>
+            <Link to="/classes-particulars">
+              <li>Classes Particulars</li>
             </Link>
             <Link to={window.location.pathname}>
               <li>Professor particular</li>
