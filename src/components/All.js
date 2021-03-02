@@ -9,16 +9,13 @@ const All = () => {
 
   useEffect(() => {
     db.collection("services")
-      .get()
-      // .orderBy("date", "asc")
-      .then((snapshot) => {
+      .orderBy("date", "asc")
+      .onSnapshot((snapshot) => {
         setServices(
           snapshot.docs.map((doc) => ({
             id: doc.id,
             title: doc.data().title,
             description: doc.data().description,
-            option: doc.data().option.label,
-            optionTag: doc.data().option.value,
             image: doc.data().url,
           }))
         );
@@ -27,20 +24,20 @@ const All = () => {
 
   return (
     <div className={styles.containerFluid}>
-    <div className={styles.container}>
-    <div>
-    <div className={styles.header__faker}></div>
-    <ul className={styles.breadcrumb}>
-    <Link to="/">
-    <li>Home</li>
-    </Link>
-    <Link to={window.location.pathname}>
-    <li>Tots els serveis</li>
-    </Link>
-    </ul>
-    </div>
-    <h1 className={styles.filter__header}>Tots els serveis</h1>
-    <div className={styles.containerFlex}>
+      <div className={styles.container}>
+        <div>
+          <div className={styles.header__faker}></div>
+          <ul className={styles.breadcrumb}>
+            <Link to="/">
+              <li>Home</li>
+            </Link>
+            <Link to={window.location.pathname}>
+              <li>Tots els serveis</li>
+            </Link>
+          </ul>
+        </div>
+        <h1 className={styles.filter__header}>Tots els serveis</h1>
+        <div className={styles.containerFlex}>
           {services.map((service) => (
             <Servei
               image={service.image}
@@ -55,6 +52,5 @@ const All = () => {
     </div>
   );
 };
-  
-  export default All;
-  
+
+export default All;
