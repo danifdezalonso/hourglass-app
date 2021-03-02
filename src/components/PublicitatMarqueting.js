@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "./PublicitatMarqueting.module.scss";
 import { db } from "../fire";
 import Servei from "./Servei";
+import firebase from "firebase";
 
 const PublicitatMarqueting = () => {
   const [services, setServices] = useState([]);
@@ -19,7 +20,7 @@ const PublicitatMarqueting = () => {
             description: doc.data().description,
             option: doc.data().option.label,
             optionTag: doc.data().option.value,
-            url: doc.data().url, //linea 39 de AddItem.js
+            url: doc.data().url,
           }))
         );
       });

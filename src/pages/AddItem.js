@@ -11,7 +11,6 @@ const AddItem = () => {
   const [description, setDescription] = useState("");
   const [location, setLocation] = useState("");
   const [image, setImage] = useState("");
-  const [loader, setLoader] = useState(false);
   const [url, setURL] = useState("");
   const [date, setDate] = useState("");
   const [option, setOption] = useState("");
@@ -23,19 +22,13 @@ const AddItem = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const uploadTask = storage.ref(`/images/${image.name}`).put(image);
-    uploadTask.on("state_changed", console.log, console.error, () => {
-      storage
-        .ref("images")
-        .child(image.name)
-        .getDownloadURL()
-        .then((url) => {
-          setImage(null);
-          setURL(url);
-        });
-    });
+    storage
+      .ref(image.name)
+      .getDownloadURL()
+      .then((url) => {
+        setURL(url);
+      });
 
-    setLoader(true);
     db.collection("services")
       .add({
         title: title,
@@ -43,14 +36,14 @@ const AddItem = () => {
         location: location,
         date: date,
         option: option,
+        url: url,
       })
       .then(() => {
-        setLoader(false);
         alert("El teu servei s'ha pujat! 👍");
+        console.log(url);
       })
       .catch((error) => {
         alert(error.message);
-        setLoader(false);
       });
 
     setTitle("");
@@ -121,7 +114,6 @@ const AddItem = () => {
                   onChange={handleChange}
                   required
                 />
-                {/* <img src={url} alt="" /> */}
               </div>
               <div className={styles.card__section}>
                 <div className={styles.card__subtitle}>Ubicació</div>
