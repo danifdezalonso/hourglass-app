@@ -20,7 +20,7 @@ const PublicitatMarqueting = () => {
             description: doc.data().description,
             option: doc.data().option.label,
             optionTag: doc.data().option.value,
-            url: doc.data().url,
+            image: doc.data().url,
           }))
         );
       });
@@ -44,7 +44,7 @@ const PublicitatMarqueting = () => {
         <div className={styles.container}>
           {services.map((service) => (
             <Servei
-              url={service.url}
+              image={service.image}
               title={service.title}
               description={service.description}
               option={service.option}

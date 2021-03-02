@@ -11,7 +11,7 @@ const Servei = (props) => {
     >
       <div className={styles.box}>
         <div className={styles.box__image}>
-          <img src={props.url} alt={props.imageAlt} />
+          <img src={props.image} alt={props.imageAlt} />
         </div>
         <div className={styles.box__text}>
           <div className={styles.box__text__upper}>
