@@ -1,11 +1,32 @@
-import React from "react";
-import styles from "./AllServices.module.scss";
-import Image1 from "../images/Serveis/actor.jpg";
-import Image2 from "../images/Serveis/agent inmobiliari.jpg";
-import Servei from "./Servei.js";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import styles from "./Disseny.module.scss";
+import { db } from "../fire";
+import Servei from "./Servei";
+
 
 const AllServices = () => {
+  const [services, setServices] = useState([]);
+
+  useEffect(() => {
+    db.collection("services")
+      .where("option.value", "==", "altres")
+      .get()
+      // .orderBy("date", "asc")
+      .then((snapshot) => {
+        setServices(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            title: doc.data().title,
+            description: doc.data().description,
+            option: doc.data().option.label,
+            optionTag: doc.data().option.value,
+            image: doc.data().url,
+          }))
+        );
+      });
+  }, []);
+
   return (
     <div>
       <div className={styles.containerFluid}>
@@ -23,25 +44,18 @@ const AllServices = () => {
           </div>
           <h1 className={styles.filter__header}>Altres Serveis</h1>
           <div className={styles.containerFlex}>
-          <Link to="/ServiceDetail">
+          {services.map((service) => (
             <Servei
-              title="Actor"
-              description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, doloremque nobis, quae necessitatibus dolorem quas illo non minima possimus quibusdam repellendus deserunt odit explicabo."
-              image={Image1}
-              imageAlt="Descripció imatge 1"
+              image={service.image}
+              title={service.title}
+              description={service.description}
+              option={service.option}
+              optionTag={service.optionTag}
             />
-            </Link>
-            <Link to="/ServiceDetail">
-            <Servei
-              title="Agent Inmobiliari"
-              description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, doloremque nobis, quae necessitatibus dolorem quas illo non minima possimus quibusdam repellendus deserunt odit explicabo."
-              image={Image2}
-              imageAlt="Descripció imatge 1"
-            />
-            </Link>
-          </div>
+          ))}
         </div>
       </div>
+    </div>
     </div>
   );
 };

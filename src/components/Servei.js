@@ -20,7 +20,7 @@ const Servei = (props) => {
           <div className={styles.box__text__description}>
             {props.description}
           </div>
-          <div className={styles.box__text__description}>{props.option}</div>
+          <div className={styles.box__text__option}>{props.option}</div>
         </div>
       </div>
     </NavLink>

@@ -7,6 +7,7 @@
     padding: 1rem;
     margin: 1rem 0.5rem 1rem 0.5rem;
     display:flex;
+    width:450px;
 
     &__image > img{
         width: 160px;
@@ -24,12 +25,6 @@
             display:flex;
             justify-content:space-between;
 
-            &__heart{
-                width:22.5px;
-                height:22.5px;
-                margin-left:8px;
-            }
-
             &__title{
                 font-size: 1.25rem;
                 text-decoration: none;
@@ -46,12 +41,19 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
-            max-width: 250px;
             font-size: 1rem;
             text-decoration: none;
             font-weight: 400;
             color: $text-color-black;
-            margin-top:5%;
+            margin-top:0.8rem;
+        }
+
+        &__option{
+            text-decoration:none;
+            color:$gray-color-dark;
+            margin-top:0.5rem;
+            font-weight:600;
+
         }
 
     }
@@ -59,7 +61,8 @@
 
 @media screen and (max-width: 600px) {
     .box{
-        margin: 0.5rem 0.3rem 0.5rem 0.3rem;
+        margin: 0.5rem 0rem 0.5rem 0rem;
+        width:375px;
     
         &__image > img{
             width: 140px;
@@ -71,15 +74,11 @@
     
             &__upper{
     
-                &__heart{
-                }
-    
                 &__title{
                     font-size: 1.1rem;
                     line-height:1.2em;
                 }
             }
-    
         }
     }
 }

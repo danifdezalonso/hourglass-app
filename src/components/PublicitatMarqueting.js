@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import styles from "./PublicitatMarqueting.module.scss";
+import styles from "./Disseny.module.scss";
 import { db } from "../fire";
 import Servei from "./Servei";
-import firebase from "firebase";
 
 const PublicitatMarqueting = () => {
   const [services, setServices] = useState([]);
@@ -42,7 +41,7 @@ const PublicitatMarqueting = () => {
           </ul>
         </div>
         <h1 className={styles.filter__header}>Publicitat i Màrqueting</h1>
-        <div className={styles.container}>
+        <div className={styles.containerFlex}>
           {services.map((service) => (
             <Servei
               image={service.image}

@@ -1,8 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Disseny.module.scss";
+import { db } from "../fire";
+import Servei from "./Servei";
 
-const WebApps = () => {
+const Massatges = () => {
+  const [services, setServices] = useState([]);
+
+  useEffect(() => {
+    db.collection("services")
+      .where("option.value", "==", "massatges")
+      .get()
+      // .orderBy("date", "asc")
+      .then((snapshot) => {
+        setServices(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            title: doc.data().title,
+            description: doc.data().description,
+            option: doc.data().option.label,
+            optionTag: doc.data().option.value,
+            image: doc.data().url,
+          }))
+        );
+      });
+  }, []);
   return (
     <div className={styles.containerFluid}>
       <div className={styles.container}>
@@ -18,12 +40,20 @@ const WebApps = () => {
           </ul>
         </div>
         <h1 className={styles.filter__header}>Massatges</h1>
-        <div className={styles.container}>
-          <p>contingut aqui</p>
+        <div className={styles.containerFlex}>
+          {services.map((service) => (
+            <Servei
+              image={service.image}
+              title={service.title}
+              description={service.description}
+              option={service.option}
+              optionTag={service.optionTag}
+            />
+          ))}
         </div>
       </div>
     </div>
   );
 };
 
-export default WebApps;
+export default Massatges;
