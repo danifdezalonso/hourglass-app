@@ -14,7 +14,7 @@ const Highlights = (props) => {
       <div className={generalStyles.container}>
         <div className={styles.title}>{props.title}</div>
         <div className={styles.filter__itemlist}>
-          <Link to="/neteja">
+          <Link to="/tasquesNeteja">
             <Categoria
               title="Tasques de neteja"
               description="55 serveis"

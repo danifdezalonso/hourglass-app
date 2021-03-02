@@ -4,7 +4,7 @@ import Categoria3 from "./Categoria3";
 import styles from "./Highlights.module.scss";
 import Passejador from "../images/ServeisPrincipals/sub_category_dog.svg";
 import Cangur from "../images/ServeisPrincipals/sub_category_kangaroo.svg";
-import Comprar from "../images/ServeisPrincipals/sub_category_comprar.svg";
+import Consultoria from "../images/ServeisPrincipals/category_consultoria.svg";
 import { Link } from "react-router-dom";
 
 const Highlights3 = (props) => {
@@ -15,7 +15,7 @@ const Highlights3 = (props) => {
         <div className={styles.filter__itemlist}>
           <Link to="/passejar-gossos">
             <Categoria3
-              title="Passejar gossos"
+              title="Passejadors de gossos"
               description="55 serveis"
               image={Passejador}
               imageAlt="Descripció imatge 1"
@@ -23,17 +23,17 @@ const Highlights3 = (props) => {
           </Link>
           <Link to="/cangur">
             <Categoria3
-              title="Cangur"
+              title="Cangurs"
               description="21 serveis"
               image={Cangur}
               imageAlt="Descripció imatge 1"
             />
           </Link>
-          <Link to="/compra">
+          <Link to="/consultoria">
             <Categoria3
-              title="Fer la compra"
+              title="Consultoria"
               description="16 serveis"
-              image={Comprar}
+              image={Consultoria}
               imageAlt="Descripció imatge 1"
             />
           </Link>

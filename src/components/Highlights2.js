@@ -1,12 +1,11 @@
 import React from "react";
 import generalStyles from "./App.module.scss";
 import Categoria2 from "./Categoria2";
-import Image1 from "../images/Serveis/fitxa-servei-img.jpg";
 import styles from "./Highlights.module.scss";
 import Informatica from "../images/ServeisPrincipals/sub_category_informatica.svg";
 import Web from "../images/ServeisPrincipals/sub_category_computer.svg";
 import Publi from "../images/ServeisPrincipals/sub_category_publicitat.svg";
-import Disseny from "../images/ServeisPrincipals/sub_category_disseny.svg";
+import Foto from "../images/ServeisPrincipals/sub_category_camera.svg";
 import { Link } from "react-router-dom";
 
 const Highlights2 = (props) => {
@@ -23,9 +22,9 @@ const Highlights2 = (props) => {
               imageAlt="Descripció imatge 1"
             />
           </Link>
-          <Link to="/web-apps">
+          <Link to="/disseny">
             <Categoria2
-              title="Webs i Apps"
+              title="Dissenyadors i Programadors"
               description="36 serveis"
               image={Web}
               imageAlt="Descripció imatge 1"
@@ -39,11 +38,11 @@ const Highlights2 = (props) => {
               imageAlt="Descripció imatge 1"
             />
           </Link>
-          <Link to="/dissenyadors">
+          <Link to="/fotografia-video">
             <Categoria2
-              title="Dissenyadors"
+              title="Fotografia i Video"
               description="21 serveis"
-              image={Disseny}
+              image={Foto}
               imageAlt="Descripció imatge 1"
             />
           </Link>
