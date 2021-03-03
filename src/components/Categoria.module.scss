@@ -1,5 +1,7 @@
 @import "./App.module.scss";
-
+.box:hover{
+    box-shadow: $box-shadow2;
+}
 .box{
     border-radius: 1px $text-color-black solid;
     background-color:$background-color;
@@ -27,7 +29,6 @@
         margin-top:0.6rem;
         padding-left:0.5rem;
     }
-
     &__description {
         display: -webkit-box;
         -webkit-line-clamp: 4;

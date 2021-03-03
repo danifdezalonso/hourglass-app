@@ -1,4 +1,7 @@
 @import "./App.module.scss";
+.box:hover{
+    box-shadow: $box-shadow2;
+}
 
 .box{
     border-radius: 1px $text-color-black solid;

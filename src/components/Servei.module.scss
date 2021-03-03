@@ -1,4 +1,8 @@
 @import "./App.module.scss";
+.box:hover{
+    // box-shadow:0 0 0 4px #eceff1;
+    box-shadow: $box-shadow2;
+}
 
 .box{
     border-radius: 1px $text-color-black solid;
@@ -85,6 +89,11 @@
     
             &__option{
                 margin-top:0.55rem;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
     
             }
         }
