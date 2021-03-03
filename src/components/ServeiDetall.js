@@ -36,9 +36,15 @@ const ServeiDetall = (props) => {
             <div className={styles.box__upperCont__favXat__fav}>
               <img src={love} alt="fav"></img>
             </div>
+            <Link
+            to="/chat"
+            className={styles.Servei__navigation}
+            activeClassName={styles.active__page}
+            >
             <button className={styles.box__upperCont__favXat__xat}>
               Xateja
             </button>
+            </Link>
           </div>
         </div>
 
