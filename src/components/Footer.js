@@ -14,12 +14,12 @@ const Footer = () => {
                 <img src={logo} alt="Logo"></img>{" "}
               </li>{" "}
               <li className={styles.footer__llistes__links__titlemax}>
-                Copyright © 2021 WallaServices
+                Copyright © 2021 Hourglass
               </li>
             </ul>
             <ul className={styles.footer__llistes__links}>
               <li>
-                <b> WallaServices</b>
+                <b> Hourglass</b>
               </li>
               <li> Qui som? </li> <li> Premsa </li> <li> Feina </li>
               <li> Equip </li>
