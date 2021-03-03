@@ -147,7 +147,7 @@ ul.breadcrumb>a>li+li:before {
         display: inline;
         font-size: 18px;
         font-size: 0.75rem;
-
+        white-space: nowrap;
     }
 
     /* Add a slash symbol (/) before/behind each list item */
